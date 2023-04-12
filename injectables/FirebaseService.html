@@ -1,0 +1,1203 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>adminApp documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">adminApp documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >FirebaseService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/services/firebase.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#pantryName" >pantryName</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#foodItemConv" >foodItemConv</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getInventory" >getInventory</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getOrderItems" >getOrderItems</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getOrders" >getOrders</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getPantry" >getPantry</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#orderConv" >orderConv</a>
+                            </li>
+                            <li>
+                                <a href="#pantryConv" >pantryConv</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateInventoryItem" >updateInventoryItem</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateOrderStatus" >updateOrderStatus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updatePantry" >updatePantry</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/services/firebase.service.ts:19</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="foodItemConv"></a>
+                    <span class="name">
+                        <span ><b>foodItemConv</b></span>
+                        <a href="#foodItemConv"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>foodItemConv(snap: DocumentSnapshot)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/services/firebase.service.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Converts Firebase Snapshot into Food Item Object</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>snap</td>
+                                    <td>
+                                            <code>DocumentSnapshot</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Firebase representation of a food item</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>FoodItem object representaion of parameter</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInventory"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getInventory</b></span>
+                        <a href="#getInventory"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getInventory()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="58"
+                            class="link-to-prism">src/app/services/firebase.service.ts:58</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieves the inventory from the firebase database</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;FoodItem[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Promise containing an array of FoodItem Objects</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getOrderItems"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getOrderItems</b></span>
+                        <a href="#getOrderItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getOrderItems(order: DocumentSnapshot)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="122"
+                            class="link-to-prism">src/app/services/firebase.service.ts:122</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retireves items from a particular order</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>order</td>
+                                    <td>
+                                            <code>DocumentSnapshot</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>DocumentSnapshot to retrives items from</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;FoodItem[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Promise containing an array of FoodItem Objects</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getOrders"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getOrders</b></span>
+                        <a href="#getOrders"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getOrders()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="93"
+                            class="link-to-prism">src/app/services/firebase.service.ts:93</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieves all orders for a pantry</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Order[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>A Promise containing an array of Order Objects</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPantry"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getPantry</b></span>
+                        <a href="#getPantry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPantry()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/app/services/firebase.service.ts:29</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieves Pantry Data from firebase database</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Pantry.html" target="_self" >Promise&lt;Pantry&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Promise that contains the Pantry Data from the database</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="orderConv"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>orderConv</b></span>
+                        <a href="#orderConv"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>orderConv(snap: DocumentSnapshot)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="147"
+                            class="link-to-prism">src/app/services/firebase.service.ts:147</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Converts Document Snapshot into an Order Object</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>snap</td>
+                                    <td>
+                                            <code>DocumentSnapshot</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>DocumentSnapshot with order data</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Order Object that contains the data from the parameter</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pantryConv"></a>
+                    <span class="name">
+                        <span ><b>pantryConv</b></span>
+                        <a href="#pantryConv"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>pantryConv(snapshot: DocumentSnapshot)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/app/services/firebase.service.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Converts Firebase Snapshot into Pantry Object</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>snapshot</td>
+                                    <td>
+                                            <code>DocumentSnapshot</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Firebase Document Snapshot of Pantry</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Pantry Object representaion of parameter</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateInventoryItem"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateInventoryItem</b></span>
+                        <a href="#updateInventoryItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateInventoryItem(itemToUpdate: FoodItem)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="160"
+                            class="link-to-prism">src/app/services/firebase.service.ts:160</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Updates a FoodItem in the inventory</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>itemToUpdate</td>
+                                    <td>
+                                            <code>FoodItem</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>FoodItem that is the item to update in the inventory</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateOrderStatus"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateOrderStatus</b></span>
+                        <a href="#updateOrderStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateOrderStatus(order: Order, newStatus: OrderStatus)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="179"
+                            class="link-to-prism">src/app/services/firebase.service.ts:179</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Updates an order</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>order</td>
+                                    <td>
+                                            <code>Order</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Order object to update in DB</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>newStatus</td>
+                                    <td>
+                                            <code>OrderStatus</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Integer status to change the order status to</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updatePantry"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updatePantry</b></span>
+                        <a href="#updatePantry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updatePantry(pantry: <a href="../interfaces/Pantry.html" target="_self">Pantry</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="195"
+                            class="link-to-prism">src/app/services/firebase.service.ts:195</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Updates Pantry details</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pantry</td>
+                                    <td>
+                                                <code><a href="../interfaces/Pantry.html" target="_self" >Pantry</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Pantry object to update in DB</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pantryName"></a>
+                    <span class="name">
+                        <span ><b>pantryName</b></span>
+                        <a href="#pantryName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;testPantry&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/services/firebase.service.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+
+import { getFirestore, collection, addDoc, updateDoc, getDocs, getDoc, QuerySnapshot, DocumentSnapshot, doc } from &#x27;firebase/firestore&#x27;
+
+import { FoodItem } from &#x27;../../../../globalModels/foodItem&#x27;
+import { Order } from &#x27;../../../../globalModels/order&#x27;
+import { Pantry } from &#x27;../../../../globalModels/pantry&#x27;
+import { OrderStatus } from &#x27;../../../../globalModels/orderStatus&#x27;;
+
+const db &#x3D; getFirestore()
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class FirebaseService {
+
+  //This will be used to determine which pantry instance is accessed
+  //TODO: update/change this when the user logs in
+  pantryName &#x3D; &#x27;testPantry&#x27;
+
+  constructor() {
+
+  }
+
+  /**
+   * Retrieves Pantry Data from firebase database
+   * @returns Promise that contains the Pantry Data from the database
+   */
+  async getPantry(): Promise&lt;Pantry&gt; {
+    let snapshot &#x3D; undefined;
+    try {
+      snapshot &#x3D; await getDoc(doc(db, &#x27;pantries/&#x27; + this.pantryName))
+    } catch (error) {
+      throw (error)
+    }
+    if (snapshot &#x3D;&#x3D; undefined) {
+      throw Error(&#x27;Food Pantry does not exist&#x27;)
+    }
+
+    return this.pantryConv(snapshot)
+
+  }
+
+  /**
+   * Converts Firebase Snapshot into Pantry Object
+   * @param snapshot Firebase Document Snapshot of Pantry
+   * @returns Pantry Object representaion of parameter
+   */
+  pantryConv(snapshot: DocumentSnapshot) {
+    let data &#x3D; snapshot.data()!
+    return new Pantry(data[&#x27;name&#x27;], data[&#x27;description&#x27;], data[&#x27;address&#x27;], data[&#x27;logoUrl&#x27;], data[&#x27;primaryColor&#x27;], data[&#x27;secondaryColor&#x27;], data[&#x27;orderLimit&#x27;])
+  }
+
+  /**
+   * Retrieves the inventory from the firebase database
+   * @returns Promise containing an array of FoodItem Objects
+   */
+  async getInventory(): Promise&lt;FoodItem[]&gt; {
+    let snapshot &#x3D; undefined;
+    try {
+      snapshot &#x3D; await getDocs(collection(db, &quot;pantries/&quot; + this.pantryName + &quot;/inventory/&quot;))
+    } catch (error) {
+      //throw error to outer page
+      throw error
+    }
+    if (snapshot &#x3D;&#x3D; undefined) {
+      throw Error(&#x27;No Data Found&#x27;)
+    }
+    
+    let toReturn: FoodItem[] &#x3D; []
+    snapshot.forEach((doc) &#x3D;&gt; {
+      if (doc.exists()) {
+        toReturn.push(this.foodItemConv(doc))
+      }
+    })
+    return toReturn
+  }
+
+  /**
+   * Converts Firebase Snapshot into Food Item Object
+   * @param snap Firebase representation of a food item
+   * @returns FoodItem object representaion of parameter
+   */
+  foodItemConv(snap: DocumentSnapshot) {
+    let docData &#x3D; snap.data()!
+    return new FoodItem(snap.id, docData[&#x27;name&#x27;], docData[&#x27;quantity&#x27;], docData[&#x27;orderQuan&#x27;], docData[&#x27;limit&#x27;], docData[&#x27;imageUrl&#x27;])
+  }
+
+  /**
+   * Retrieves all orders for a pantry
+   * @returns A Promise containing an array of Order Objects
+   */
+  async getOrders(): Promise&lt;Order[]&gt; {
+    let snapshot &#x3D; undefined;
+    try {
+      snapshot &#x3D; await getDocs(collection(db, &quot;pantries/&quot; + this.pantryName + &quot;/orders/&quot;))
+    } catch (error) {
+      //throw error to outer page
+      throw error
+    }
+    if (snapshot &#x3D;&#x3D; undefined) {
+      throw Error(&#x27;No Data Found&#x27;)
+    }
+
+    let toReturn: Order[] &#x3D; []
+
+    for (let doc of snapshot.docs) {
+      if (doc.exists()) {
+        let toAdd &#x3D; await this.orderConv(doc)
+        toReturn.push(toAdd)
+      }
+    }
+    // console.log(&#x27;returning from orders&#x27;)
+    return toReturn
+  }
+
+  /**
+   * Retireves items from a particular order
+   * @param order DocumentSnapshot to retrives items from
+   * @returns Promise containing an array of FoodItem Objects
+   */
+  async getOrderItems(order: DocumentSnapshot): Promise&lt;FoodItem[]&gt; {
+    let snapshot &#x3D; undefined
+    let orderPath &#x3D; order.ref.path
+    try {
+      snapshot &#x3D; await getDocs(collection(db, orderPath + &#x27;/items&#x27;))
+    } catch (error) {
+      throw error
+    }
+    if (snapshot &#x3D;&#x3D; undefined) {
+      throw Error(&#x27;No Data Found&#x27;)
+    }
+
+    let toReturn: FoodItem[] &#x3D; []
+    snapshot.forEach((item) &#x3D;&gt; {
+      toReturn.push(this.foodItemConv(item))
+    })
+    // console.log(&#x27;return from getOrderItems&#x27;)
+    return toReturn
+  }
+
+  /**
+   * Converts Document Snapshot into an Order Object
+   * @param snap DocumentSnapshot with order data
+   * @returns Order Object that contains the data from the parameter
+   */
+  async orderConv(snap: DocumentSnapshot) {
+    let docData &#x3D; snap.data()!
+    let items: FoodItem[] &#x3D; []
+    //TODO: actually pull for items for order
+    items &#x3D; await this.getOrderItems(snap)
+    // console.log(&#x27;return from order conv&#x27;)
+    return new Order(snap.id, docData[&#x27;date&#x27;], docData[&#x27;status&#x27;], docData[&#x27;uid&#x27;], items)
+  }
+
+  /**
+   * Updates a FoodItem in the inventory
+   * @param itemToUpdate FoodItem that is the item to update in the inventory
+   */
+  async updateInventoryItem(itemToUpdate: FoodItem) {
+    let docRef &#x3D; doc(db, &#x27;pantries/&#x27; + this.pantryName + &#x27;/inventory/&#x27; + itemToUpdate.id)
+    let snapshot &#x3D; await getDoc(docRef)
+    if (snapshot.exists()) {
+      await updateDoc(docRef, {
+        name: itemToUpdate.name,
+        limit: itemToUpdate.limit,
+        quantity: itemToUpdate.quantity
+      })
+    } else {
+      throw Error(&#x27;Item does not exist!&#x27;)
+    }
+  }
+
+  /**
+   * Updates an order
+   * @param order Order object to update in DB 
+   * @param newStatus Integer status to change the order status to
+   */
+  async updateOrderStatus(order: Order, newStatus: OrderStatus) {
+    let docRef &#x3D; doc(db, &#x27;pantries/&#x27; + this.pantryName + &#x27;/orders/&#x27; + order.id)
+    let snapshot &#x3D; await getDoc(docRef)
+    if (snapshot.exists()) {
+      await updateDoc(docRef, {
+        status: newStatus
+      })
+    } else {
+      throw Error(&#x27;Order does not exist!&#x27;)
+    }
+  }
+
+  /**
+   * Updates Pantry details
+   * @param pantry Pantry object to update in DB
+   */
+  async updatePantry(pantry: Pantry) {
+    let docRef &#x3D; doc(db, &#x27;pantries/&#x27; + this.pantryName)
+    let snapshot &#x3D; await getDoc(docRef)
+    if (snapshot.exists()) {
+      await updateDoc(docRef, {
+        address: pantry.address,
+        description: pantry.desc,
+        logoUrl: pantry.logoUrl,
+        name: pantry.name,
+        orderLimit: pantry.orderLimit,
+        primaryColor: pantry.primaryColor,
+        secondaryColor: pantry.secondaryColor
+      })
+    } else {
+      throw Error(&#x27;pantry does not exist!&#x27;)
+    }
+  }
+
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'FirebaseService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

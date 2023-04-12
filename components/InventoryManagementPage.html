@@ -1,0 +1,1383 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>adminApp documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">adminApp documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  InventoryManagementPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/inventory-management/inventory-management.page.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>inventory-management</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./inventory-management.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./inventory-management.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#actions" >actions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialog" >dialog</a>
+                            </li>
+                            <li>
+                                <a href="#displayedColumns" >displayedColumns</a>
+                            </li>
+                            <li>
+                                <a href="#length" >length</a>
+                            </li>
+                            <li>
+                                <a href="#pageSize" >pageSize</a>
+                            </li>
+                            <li>
+                                <a href="#pageSizeOptions" >pageSizeOptions</a>
+                            </li>
+                            <li>
+                                <a href="#paginator" >paginator</a>
+                            </li>
+                            <li>
+                                <a href="#records" >records</a>
+                            </li>
+                            <li>
+                                <a href="#sort" >sort</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#ngAfterViewInit" >ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openAddDialog" >openAddDialog</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#openAlert" >openAlert</a>
+                            </li>
+                            <li>
+                                <a href="#openEditDialog" >openEditDialog</a>
+                            </li>
+                            <li>
+                                <a href="#removeItem" >removeItem</a>
+                            </li>
+                            <li>
+                                <a href="#updateFilter" >updateFilter</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(dialog: MatDialog, alertController: AlertController, firebaseService: <a href="../injectables/FirebaseService.html" target="_self">FirebaseService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:33</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>alertController</td>
+                                                  
+                                                        <td>
+                                                                    <code>AlertController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>firebaseService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FirebaseService.html" target="_self" >FirebaseService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>ngAfterViewInit</b></span>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="44"
+                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:44</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:40</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openAddDialog"></a>
+                    <span class="name">
+                        <span ><b>openAddDialog</b></span>
+                        <a href="#openAddDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openAddDialog()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="97"
+                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:97</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openAlert"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>openAlert</b></span>
+                        <a href="#openAlert"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>openAlert(item: FoodItem)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="69"
+                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:69</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                            <code>FoodItem</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openEditDialog"></a>
+                    <span class="name">
+                        <span ><b>openEditDialog</b></span>
+                        <a href="#openEditDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openEditDialog(item: FoodItem)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:89</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                            <code>FoodItem</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeItem"></a>
+                    <span class="name">
+                        <span ><b>removeItem</b></span>
+                        <a href="#removeItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeItem(item: FoodItem)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:60</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                            <code>FoodItem</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateFilter"></a>
+                    <span class="name">
+                        <span ><b>updateFilter</b></span>
+                        <a href="#updateFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateFilter(event: <a href="https://angular.io/api/router/Event" target="_blank">Event</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/router/Event" target="_blank" >Event</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="actions"></a>
+                    <span class="name">
+                        <span ><b>actions</b></span>
+                        <a href="#actions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatMenuTrigger</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(MatMenuTrigger)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dialog"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dialog</b></span>
+                        <a href="#dialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatDialog</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="displayedColumns"></a>
+                    <span class="name">
+                        <span ><b>displayedColumns</b></span>
+                        <a href="#displayedColumns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[&#x27;name&#x27;, &#x27;quantity&#x27;, &#x27;limit&#x27;, &#x27;actions&#x27;]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="length"></a>
+                    <span class="name">
+                        <span ><b>length</b></span>
+                        <a href="#length"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pageSize"></a>
+                    <span class="name">
+                        <span ><b>pageSize</b></span>
+                        <a href="#pageSize"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>5</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pageSizeOptions"></a>
+                    <span class="name">
+                        <span ><b>pageSizeOptions</b></span>
+                        <a href="#pageSizeOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>number[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[5, 10, 25, 100]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="paginator"></a>
+                    <span class="name">
+                        <span ><b>paginator</b></span>
+                        <a href="#paginator"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatPaginator</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(MatPaginator)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="records"></a>
+                    <span class="name">
+                        <span ><b>records</b></span>
+                        <a href="#records"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatTableDataSource&lt;FoodItem&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sort"></a>
+                    <span class="name">
+                        <span ><b>sort</b></span>
+                        <a href="#sort"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatSort</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(MatSort)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { AfterViewInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { MatMenuTrigger } from &#x27;@angular/material/menu&#x27;;
+import { MatPaginator } from &#x27;@angular/material/paginator&#x27;;
+import { MatSort } from &#x27;@angular/material/sort&#x27;;
+import { MatTableDataSource } from &#x27;@angular/material/table&#x27;;
+import {MatDialog, MatDialogRef} from &#x27;@angular/material/dialog&#x27;;
+import { AlertController } from &#x27;@ionic/angular&#x27;;
+import { FoodItem } from &#x27;../../../../globalModels/foodItem&#x27;;
+import { FirebaseService } from &#x27;../services/firebase.service&#x27;;
+import { Inject } from &#x27;@angular/core&#x27;;
+import {MAT_DIALOG_DATA} from &#x27;@angular/material/dialog&#x27;;
+
+
+
+
+@Component({
+  selector: &#x27;inventory-management&#x27;,
+  templateUrl: &#x27;./inventory-management.page.html&#x27;,
+  styleUrls: [&#x27;./inventory-management.page.scss&#x27;],
+})
+export class InventoryManagementPage implements AfterViewInit{
+  
+
+  displayedColumns: string[] &#x3D; [&#x27;name&#x27;, &#x27;quantity&#x27;, &#x27;limit&#x27;, &#x27;actions&#x27;];
+  records: MatTableDataSource&lt;FoodItem&gt;
+  length: number &#x3D; 0;
+  pageSize &#x3D; 5;
+  pageSizeOptions: number[] &#x3D; [5, 10, 25, 100];
+
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatMenuTrigger) actions: MatMenuTrigger;
+  constructor(
+    public dialog: MatDialog,
+    private alertController: AlertController,
+    private firebaseService: FirebaseService,
+    ) { }
+
+  async ngOnInit() {    
+    
+  }
+
+  async ngAfterViewInit() {
+    let data &#x3D; await this.firebaseService.getInventory()
+    this.records &#x3D; new MatTableDataSource&lt;FoodItem&gt;(data)
+    this.length &#x3D; this.records.data.length;
+    this.records.paginator &#x3D; this.paginator;
+    this.records.sort &#x3D; this.sort;
+  }
+
+  updateFilter(event: Event){
+    const filterValue &#x3D; (event.target as HTMLInputElement).value;
+    this.records.filter &#x3D; filterValue.trim().toLowerCase();
+
+    if(this.records.paginator) {
+      this.records.paginator.firstPage();
+    }
+  }
+  removeItem(item: FoodItem) {
+    //find the index from id
+    let removed &#x3D; this.records.data.splice(this.records.data.indexOf(item), 1)
+    if(this.records.paginator) {
+      this.records.paginator.firstPage();
+    }
+    this.records._updateChangeSubscription();
+  }
+ 
+  async openAlert(item: FoodItem){
+    const alert &#x3D; await this.alertController.create({
+      header: &#x27;Alert&#x27;,
+      message: &#x27;Are you sure you want to remove this item?&#x27;,
+      buttons: [{
+        text: &#x27;Cancel&#x27;,
+        role: &#x27;cancel&#x27;,
+        handler: () &#x3D;&gt; {}
+      },
+      {
+        text: &#x27;Delete Item&#x27;,
+        role: &#x27;confirm&#x27;,
+        handler: () &#x3D;&gt; {
+          this.removeItem(item)
+        }
+      }],
+    });
+    await alert.present();
+  }
+
+  openEditDialog(item: FoodItem){
+    const dialogRef &#x3D; this.dialog.open(EditDialog, {restoreFocus: false, data: item});
+    dialogRef.afterClosed().subscribe(() &#x3D;&gt; {
+      this.actions.focus()
+      this.records._updateChangeSubscription();
+    });
+  }
+
+  openAddDialog(){
+    const dialogRef &#x3D; this.dialog.open(AddDialog, {restoreFocus: false});
+    dialogRef.afterClosed().subscribe(() &#x3D;&gt; {
+      this.actions.focus()
+      this.records._updateChangeSubscription();
+    })
+  }
+}
+
+@Component({
+  selector: &#x27;add-dialog&#x27;,
+  templateUrl: &#x27;add-dialog.html&#x27;
+})
+export class AddDialog implements OnInit {
+  nameInput: string
+  quantityInput: number
+  limitInput: number
+  ngOnInit(): void {
+      
+  }
+
+  AddItem(){
+    //write to db or something idk
+    let item: FoodItem &#x3D; {
+      id: this.nameInput,
+      name: this.nameInput,
+      quantity: this.quantityInput,
+      limit: this.limitInput
+    }
+    console.log(item)
+  }
+}
+
+@Component({
+  selector: &#x27;edit-dialog&#x27;,
+  templateUrl: &#x27;edit-dialog.html&#x27;
+})
+export class EditDialog implements OnInit{
+  constructor(@Inject(MAT_DIALOG_DATA) public data: FoodItem){}
+  private cancelItem &#x3D; 0;
+  private cancelLimit &#x3D; 0;
+  //private name &#x3D; this.data.name;
+  nameInput: string &#x3D; this.data.name
+  ngOnInit() {
+    console.log(this.data)
+  }
+
+  addItem(item: FoodItem){
+    item.quantity &#x3D; item.quantity + 1;
+    this.cancelItem &#x3D; this.cancelItem - 1;
+  }
+
+  removeItem(item: FoodItem){
+    item.quantity &#x3D; item.quantity - 1;
+    this.cancelItem &#x3D; this.cancelItem + 1;
+  }
+
+  addLimit(item: FoodItem){
+    if(item.limit){
+      item.limit &#x3D; item.limit + 1
+      this.cancelLimit &#x3D; this.cancelLimit - 1
+    } else {
+      item.limit &#x3D; 1
+      this.cancelLimit &#x3D; this.cancelLimit - 1
+    }
+  }
+
+  removeLimit(item: FoodItem){
+    if(item.limit){
+      item.limit &#x3D; item.limit - 1;
+      this.cancelLimit &#x3D; this.cancelLimit + 1
+    } else if(item.limit &#x3D;&#x3D; 1) {
+      item.limit &#x3D; undefined;
+      this.cancelLimit &#x3D; this.cancelLimit + 1
+    }
+  }
+
+  saveData(item: FoodItem){
+    //write to db
+    console.log(this.nameInput)
+    if(this.nameInput !&#x3D; &quot;&quot;){
+      item.name &#x3D; this.nameInput
+    }
+  }
+
+  cancelData(item: FoodItem){
+    item.quantity &#x3D; item.quantity + this.cancelItem;
+    if(item.limit){
+      item.limit &#x3D; item.limit + this.cancelLimit
+      if(item.limit &#x3D;&#x3D; 0){
+        item.limit &#x3D; undefined
+      }
+    }
+  }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-header&gt;
+  &lt;ion-toolbar&gt;
+    &lt;ion-title&gt;Inventory Management&lt;/ion-title&gt;
+  &lt;/ion-toolbar&gt;
+&lt;/ion-header&gt;
+
+&lt;ion-content class&#x3D;&quot;table-container&quot;&gt;
+  &lt;div class&#x3D;&quot;table-container&quot;&gt;
+    &lt;div&gt;
+      &lt;mat-grid-list cols&#x3D;&quot;2&quot;&gt;
+        &lt;mat-grid-tile&gt;
+          &lt;mat-form-field&gt;
+            &lt;mat-label&gt;Filter&lt;/mat-label&gt;
+            &lt;input matInput (keyup)&#x3D;&quot;updateFilter($event)&quot; placeholder&#x3D;&quot;Filter table...&quot; #input&gt;
+          &lt;/mat-form-field&gt;
+        &lt;/mat-grid-tile&gt;
+        &lt;mat-grid-tile&gt;
+          &lt;ion-button (click)&#x3D;&quot;openAddDialog()&quot;&gt;Add Item&lt;/ion-button&gt;
+        &lt;/mat-grid-tile&gt;
+      &lt;/mat-grid-list&gt;
+    &lt;/div&gt;
+    
+
+    &lt;table mat-table [dataSource]&#x3D;&quot;records&quot; matSort class&#x3D;&quot;table&quot; &gt;
+      &lt;ng-container matColumnDef&#x3D;&quot;name&quot;&gt;
+        &lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt;Name&lt;/th&gt;
+        &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;{{element.name}}&lt;/td&gt;
+      &lt;/ng-container&gt;
+      &lt;ng-container matColumnDef&#x3D;&quot;quantity&quot;&gt;
+        &lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt;Quantity&lt;/th&gt;
+        &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;{{element.quantity}}&lt;/td&gt;
+      &lt;/ng-container&gt;
+      &lt;ng-container matColumnDef&#x3D;&quot;limit&quot;&gt;
+        &lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt;Limit&lt;/th&gt;
+        &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;&lt;div *ngIf&#x3D;&quot;element.limit; else elseBlock&quot;&gt;
+         {{element.limit}}
+        &lt;/div&gt;&lt;ng-template #elseBlock&gt;None&lt;/ng-template&gt;&lt;/td&gt;
+      &lt;/ng-container&gt;
+      &lt;ng-container matColumnDef&#x3D;&quot;actions&quot;&gt;
+        &lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt;Actions&lt;/th&gt;
+        &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;
+          &lt;ion-button [matMenuTriggerFor]&#x3D;&quot;actions&quot; fill&#x3D;&quot;clear&quot;&gt;
+            &lt;ion-icon name&#x3D;&quot;ellipsis-horizontal&quot; class&#x3D;&quot;actions&quot;&gt;&lt;/ion-icon&gt;          
+          &lt;/ion-button&gt;
+          &lt;mat-menu #actions&#x3D;&quot;matMenu&quot;&gt;
+            &lt;button mat-menu-item (click)&#x3D;&quot;openEditDialog(element)&quot;&gt;
+              &lt;span&gt;Edit Item&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button mat-menu-item (click)&#x3D;&quot;openAlert(element)&quot;&gt;
+              &lt;span&gt;Remove Item&lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/mat-menu&gt;
+        &lt;/td&gt;
+      &lt;/ng-container&gt;
+      
+      
+      &lt;tr mat-header-row *matHeaderRowDef&#x3D;&quot;displayedColumns; sticky: true;&quot;&gt;&lt;/tr&gt;
+      &lt;tr mat-row *matRowDef&#x3D;&quot;let row;  columns: displayedColumns;&quot;&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;mat-paginator #paginator [pageSize]&#x3D;&quot;pageSize&quot; [pageSizeOptions]&#x3D;&quot;pageSizeOptions&quot; showFirstLastButtons&gt;
+    &lt;/mat-paginator&gt;
+  &lt;/div&gt;
+&lt;/ion-content&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./inventory-management.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.table-container{
+    height: 100vh
+}
+
+
+table {
+    width: 100%;
+}
+
+.mat-cell {
+    width: 40%;
+}
+  
+.mat-column-gender {
+    width: 20%;
+}
+
+th.mat-sort-header-sorted {
+    color: black;
+}
+  
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+.actions {
+    fill: black;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-header>  <ion-toolbar>    <ion-title>Inventory Management</ion-title>  </ion-toolbar></ion-header><ion-content class="table-container">  <div class="table-container">    <div>      <mat-grid-list cols="2">        <mat-grid-tile>          <mat-form-field>            <mat-label>Filter</mat-label>            <input matInput (keyup)="updateFilter($event)" placeholder="Filter table..." #input>          </mat-form-field>        </mat-grid-tile>        <mat-grid-tile>          <ion-button (click)="openAddDialog()">Add Item</ion-button>        </mat-grid-tile>      </mat-grid-list>    </div>        <table mat-table [dataSource]="records" matSort class="table" >      <ng-container matColumnDef="name">        <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>        <td mat-cell *matCellDef="let element">{{element.name}}</td>      </ng-container>      <ng-container matColumnDef="quantity">        <th mat-header-cell *matHeaderCellDef mat-sort-header>Quantity</th>        <td mat-cell *matCellDef="let element">{{element.quantity}}</td>      </ng-container>      <ng-container matColumnDef="limit">        <th mat-header-cell *matHeaderCellDef mat-sort-header>Limit</th>        <td mat-cell *matCellDef="let element"><div *ngIf="element.limit; else elseBlock">         {{element.limit}}        </div><ng-template #elseBlock>None</ng-template></td>      </ng-container>      <ng-container matColumnDef="actions">        <th mat-header-cell *matHeaderCellDef mat-sort-header>Actions</th>        <td mat-cell *matCellDef="let element">          <ion-button [matMenuTriggerFor]="actions" fill="clear">            <ion-icon name="ellipsis-horizontal" class="actions"></ion-icon>                    </ion-button>          <mat-menu #actions="matMenu">            <button mat-menu-item (click)="openEditDialog(element)">              <span>Edit Item</span>            </button>            <button mat-menu-item (click)="openAlert(element)">              <span>Remove Item</span>            </button>          </mat-menu>        </td>      </ng-container>                  <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true;"></tr>      <tr mat-row *matRowDef="let row;  columns: displayedColumns;"></tr>    </table>    <mat-paginator #paginator [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions" showFirstLastButtons>    </mat-paginator>  </div></ion-content></div>'
+    var COMPONENTS = [{'name': 'AddDialog', 'selector': 'add-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditDetailsDialog', 'selector': 'edit-details-dialog'},{'name': 'EditDialog', 'selector': 'edit-dialog'},{'name': 'EditOrderDialog', 'selector': 'edit-order-dialog'},{'name': 'ForgotPasswordPage', 'selector': 'app-forgot-password'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'InventoryManagementPage', 'selector': 'inventory-management'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'OrderManagementPage', 'selector': 'app-order-management'},{'name': 'PantryStatisticsPage', 'selector': 'app-pantry-statistics'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'SignupPage', 'selector': 'app-signup'},{'name': 'ViewOrderDialog', 'selector': 'view-order-dialog'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'InventoryManagementPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'InventoryManagementPage.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
