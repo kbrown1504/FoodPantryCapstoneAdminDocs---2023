@@ -65,6 +65,13 @@
 </p>
 
 
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Edit order dialog that will be used on this page</p>
+
+    </p>
 
 
     <p class="comment">
@@ -184,7 +191,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="164" class="link-to-prism">src/app/order-management/order-management.page.ts:164</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="169" class="link-to-prism">src/app/order-management/order-management.page.ts:169</a></div>
                             </td>
                         </tr>
 
@@ -275,8 +282,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="181"
-                            class="link-to-prism">src/app/order-management/order-management.page.ts:181</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="186"
+                            class="link-to-prism">src/app/order-management/order-management.page.ts:186</a></div>
                 </td>
             </tr>
 
@@ -352,8 +359,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="170"
-                            class="link-to-prism">src/app/order-management/order-management.page.ts:170</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="175"
+                            class="link-to-prism">src/app/order-management/order-management.page.ts:175</a></div>
                 </td>
             </tr>
 
@@ -391,8 +398,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="189"
-                            class="link-to-prism">src/app/order-management/order-management.page.ts:189</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="194"
+                            class="link-to-prism">src/app/order-management/order-management.page.ts:194</a></div>
                 </td>
             </tr>
 
@@ -482,7 +489,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="165" class="link-to-prism">src/app/order-management/order-management.page.ts:165</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="170" class="link-to-prism">src/app/order-management/order-management.page.ts:170</a></div>
                         </td>
                     </tr>
 
@@ -507,7 +514,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="163" class="link-to-prism">src/app/order-management/order-management.page.ts:163</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="168" class="link-to-prism">src/app/order-management/order-management.page.ts:168</a></div>
                         </td>
                     </tr>
 
@@ -532,7 +539,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="164" class="link-to-prism">src/app/order-management/order-management.page.ts:164</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="169" class="link-to-prism">src/app/order-management/order-management.page.ts:169</a></div>
                         </td>
                     </tr>
 
@@ -557,7 +564,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="162" class="link-to-prism">src/app/order-management/order-management.page.ts:162</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="167" class="link-to-prism">src/app/order-management/order-management.page.ts:167</a></div>
                         </td>
                     </tr>
 
@@ -586,6 +593,9 @@ import { MatMenuTrigger } from &#x27;@angular/material/menu&#x27;;
 import { Observable, from } from &#x27;rxjs&#x27;;
 import { AlertService } from &#x27;../services/alert.service&#x27;;
 
+/**
+ * Order management page
+ */
 @Component({
   selector: &#x27;app-order-management&#x27;,
   templateUrl: &#x27;./order-management.page.html&#x27;,
@@ -724,7 +734,9 @@ export class OrderManagementPage implements AfterViewInit {
   }
 }
 
-
+/**
+ * Edit order dialog that will be used on this page
+ */
 @Component({
   selector: &#x27;edit-order-dialog&#x27;,
   templateUrl: &#x27;edit-order-dialog.html&#x27;
@@ -771,7 +783,9 @@ export class EditOrderDialog implements OnInit {
   }
 }
 
-
+/**
+ * View order dialog that will be used on this page
+ */
 @Component({
   selector: &#x27;view-order-dialog&#x27;,
   templateUrl: &#x27;view-order-dialog.html&#x27;
