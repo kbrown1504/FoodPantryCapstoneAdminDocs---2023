@@ -183,7 +183,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="130" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:130</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="155" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:155</a></div>
                             </td>
                         </tr>
 
@@ -264,8 +264,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="142"
-                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:142</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="167"
+                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:167</a></div>
                 </td>
             </tr>
 
@@ -303,8 +303,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="135"
-                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:135</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="160"
+                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:160</a></div>
                 </td>
             </tr>
 
@@ -344,7 +344,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="130" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:130</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="155" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:155</a></div>
                         </td>
                     </tr>
 
@@ -370,7 +370,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="128" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:128</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="153" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:153</a></div>
                         </td>
                     </tr>
 
@@ -396,7 +396,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="126" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:126</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="151" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:151</a></div>
                         </td>
                     </tr>
 
@@ -422,7 +422,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="127" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:127</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="152" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:152</a></div>
                         </td>
                     </tr>
 
@@ -448,7 +448,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="129" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:129</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="154" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:154</a></div>
                         </td>
                     </tr>
 
@@ -508,6 +508,9 @@ export class InventoryManagementPage implements AfterViewInit{
     
   }
 
+  /**
+   * Updates the data source of the table
+   */
   async updateTableSource() {
     let data &#x3D; await this.firebaseService.getInventory()
     this.records &#x3D; new MatTableDataSource&lt;FoodItem&gt;(data)
@@ -519,6 +522,10 @@ export class InventoryManagementPage implements AfterViewInit{
     await this.updateTableSource()
   }
 
+  /**
+   * Updates the tables based on the filter
+   * @param event event emited by the filter input
+   */
   updateFilter(event: Event){
     const filterValue &#x3D; (event.target as HTMLInputElement).value;
     this.records.filter &#x3D; filterValue.trim().toLowerCase();
@@ -527,6 +534,10 @@ export class InventoryManagementPage implements AfterViewInit{
       this.records.paginator.firstPage();
     }
   }
+  /**
+   * Removes an item from the table
+   * @param item FoodItem to remove
+   */
   async removeItem(item: FoodItem) {
     //find the index from id
     await this.firebaseService.removeItem(item)
@@ -537,6 +548,10 @@ export class InventoryManagementPage implements AfterViewInit{
     this.records._updateChangeSubscription();
   }
  
+  /**
+   * Opens an alert to confirm if a user wants to remove an item
+   * @param item FoodItem to remove
+   */
   async openAlert(item: FoodItem){
     const alert &#x3D; await this.alertController.create({
       header: &#x27;Alert&#x27;,
@@ -557,6 +572,10 @@ export class InventoryManagementPage implements AfterViewInit{
     await alert.present();
   }
 
+  /**
+   * Opens the edit dialog
+   * @param item FoodItem to edit
+   */
    openEditDialog(item: FoodItem){
     const dialogRef &#x3D; this.dialog.open(EditDialog, {restoreFocus: false, data: item});
     dialogRef.afterClosed().subscribe( () &#x3D;&gt; {
@@ -565,6 +584,9 @@ export class InventoryManagementPage implements AfterViewInit{
     });
   }
 
+  /**
+   * opens the add item dialog
+   */
    async openAddDialog(){
     const dialogRef &#x3D; this.dialog.open(AddDialog, {restoreFocus: false});
     InventoryManagementPage.addDialogRef &#x3D; dialogRef
@@ -575,6 +597,9 @@ export class InventoryManagementPage implements AfterViewInit{
     })
   }
 
+  /**
+   * Closes the add dialog
+   */
   static async closeAddDialog() {
     await InventoryManagementPage.addDialogRef.close()
   }
