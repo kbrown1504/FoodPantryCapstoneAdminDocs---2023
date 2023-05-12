@@ -158,6 +158,7 @@
                                 <a href="#ngOnInit" >ngOnInit</a>
                             </li>
                             <li>
+                                    <span class="modifier">Async</span>
                                 <a href="#saveOrder" >saveOrder</a>
                             </li>
                         </ul>
@@ -178,12 +179,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(data: Order)</code>
+<code>constructor(data: Order, firebaseService: <a href="../injectables/FirebaseService.html" target="_self">FirebaseService</a>, alertService: <a href="../injectables/AlertService.html" target="_self">AlertService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="127" class="link-to-prism">src/app/order-management/order-management.page.ts:127</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="164" class="link-to-prism">src/app/order-management/order-management.page.ts:164</a></div>
                             </td>
                         </tr>
 
@@ -205,6 +206,30 @@
                                                   
                                                         <td>
                                                                     <code>Order</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>firebaseService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FirebaseService.html" target="_self" >FirebaseService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>alertService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AlertService.html" target="_self" >AlertService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -250,14 +275,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="135"
-                            class="link-to-prism">src/app/order-management/order-management.page.ts:135</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="181"
+                            class="link-to-prism">src/app/order-management/order-management.page.ts:181</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Converts the numerical order status to the coresponding string</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -268,6 +295,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -282,6 +310,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>OrderStatus to convert</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -293,7 +325,8 @@
 
                     </div>
                     <div class="io-description">
-                        
+                        <p>String representaion of OrderStatus</p>
+
                     </div>
                 </td>
             </tr>
@@ -319,8 +352,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="129"
-                            class="link-to-prism">src/app/order-management/order-management.page.ts:129</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="170"
+                            class="link-to-prism">src/app/order-management/order-management.page.ts:170</a></div>
                 </td>
             </tr>
 
@@ -342,6 +375,7 @@
                 <td class="col-md-4">
                     <a name="saveOrder"></a>
                     <span class="name">
+                        <span class="modifier">Async</span>
                         <span ><b>saveOrder</b></span>
                         <a href="#saveOrder"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -349,21 +383,24 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>saveOrder(data: Order)</code>
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>saveOrder(data: Order)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="140"
-                            class="link-to-prism">src/app/order-management/order-management.page.ts:140</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="189"
+                            class="link-to-prism">src/app/order-management/order-management.page.ts:189</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Saves the changes made to an order in the DB (mainly order status)</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -374,6 +411,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -388,6 +426,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>Order to update in the DB</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -395,7 +437,7 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                     </div>
                     <div class="io-description">
@@ -440,7 +482,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="128" class="link-to-prism">src/app/order-management/order-management.page.ts:128</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="165" class="link-to-prism">src/app/order-management/order-management.page.ts:165</a></div>
                         </td>
                     </tr>
 
@@ -465,7 +507,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="126" class="link-to-prism">src/app/order-management/order-management.page.ts:126</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="163" class="link-to-prism">src/app/order-management/order-management.page.ts:163</a></div>
                         </td>
                     </tr>
 
@@ -490,7 +532,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="127" class="link-to-prism">src/app/order-management/order-management.page.ts:127</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="164" class="link-to-prism">src/app/order-management/order-management.page.ts:164</a></div>
                         </td>
                     </tr>
 
@@ -515,7 +557,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="125" class="link-to-prism">src/app/order-management/order-management.page.ts:125</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="162" class="link-to-prism">src/app/order-management/order-management.page.ts:162</a></div>
                         </td>
                     </tr>
 
@@ -542,6 +584,7 @@ import { Inject } from &#x27;@angular/core&#x27;;
 import { MAT_DIALOG_DATA } from &#x27;@angular/material/dialog&#x27;;
 import { MatMenuTrigger } from &#x27;@angular/material/menu&#x27;;
 import { Observable, from } from &#x27;rxjs&#x27;;
+import { AlertService } from &#x27;../services/alert.service&#x27;;
 
 @Component({
   selector: &#x27;app-order-management&#x27;,
@@ -551,7 +594,7 @@ import { Observable, from } from &#x27;rxjs&#x27;;
 
 export class OrderManagementPage implements AfterViewInit {
 
-  displayedColumns: string[] &#x3D; [&#x27;date&#x27;, &#x27;id&#x27;, &#x27;status&#x27;, &#x27;actions&#x27;];
+  displayedColumns: string[] &#x3D; [&#x27;timestamp&#x27;, &#x27;id&#x27;, &#x27;status&#x27;, &#x27;actions&#x27;];
   records: MatTableDataSource&lt;Order&gt; &#x3D; new MatTableDataSource&lt;Order&gt;([]);
 
   length: number &#x3D; 0;
@@ -566,6 +609,7 @@ export class OrderManagementPage implements AfterViewInit {
     public dialog: MatDialog,
     private firebase: FirebaseService,
     private alertController: AlertController,
+    private alertService: AlertService
   ) { }
 
   ngOnInit() {
@@ -576,16 +620,30 @@ export class OrderManagementPage implements AfterViewInit {
 
   }
 
+  /**
+   * Retrieves orders from the DB and initalizes table.
+   */
   async ngAfterViewInit() {
-    let orders &#x3D; await this.firebase.getOrders()
+    try {
+      let orders &#x3D; await this.firebase.getOrders()
+      // orders.sort(function(a, b){
+      //   return b.timestamp.getDate() - a.timestamp.getDate()
+      // })
+      this.records.data &#x3D; orders
+      this.length &#x3D; this.records.data.length
+      this.records.paginator &#x3D; this.paginator;
+      this.records.sort &#x3D; this.sort;
+    } catch (err) {
+      this.alertService.presentAlert(&#x27;Error&#x27;, &#x27;Could not retrieve data. Please try again later.&#x27;, [&#x27;Ok&#x27;])
+    }
     
-    this.records.data &#x3D; orders
-    this.length &#x3D; this.records.data.length
-    this.records.paginator &#x3D; this.paginator;
-    this.records.sort &#x3D; this.sort;
   }
 
 
+  /**
+   * Updates the table based on the value in the filter input
+   * @param event Event emited by filter changing
+   */
   updateFilter(event: Event) {
     const filterValue &#x3D; (event.target as HTMLInputElement).value;
     this.records.filter &#x3D; filterValue.trim().toLowerCase();
@@ -595,10 +653,19 @@ export class OrderManagementPage implements AfterViewInit {
     }
   }
 
+  /**
+   * Converts the numerical order status to the coresponding string
+   * @param status OrderStatus to convert
+   * @returns String representaion of OrderStatus
+   */
   getStatus(status: OrderStatus) {
     return OrderStatus[status]
   }
 
+  /**
+   * Removes an order from the table
+   * @param order Order to be removed
+   */
   removeItem(order: Order) {
     //find the index from id
     let removed &#x3D; this.records.data.splice(this.records.data.indexOf(order), 1)
@@ -608,6 +675,10 @@ export class OrderManagementPage implements AfterViewInit {
     this.records._updateChangeSubscription();
   }
 
+  /**
+   * Opens an alert for the user for confirm if they want to remove an order
+   * @param order Order to be removed
+   */
   async openAlert(order: Order) {
     const alert &#x3D; await this.alertController.create({
       header: &#x27;Alert&#x27;,
@@ -628,6 +699,10 @@ export class OrderManagementPage implements AfterViewInit {
     await alert.present();
   }
 
+  /**
+   * Opens the edit dialog
+   * @param order Order to edit
+   */
   openEditDialog(order: Order) {
     const dialogRef &#x3D; this.dialog.open(EditOrderDialog, { restoreFocus: false, data: order })
     dialogRef.afterClosed().subscribe(() &#x3D;&gt; {
@@ -636,6 +711,10 @@ export class OrderManagementPage implements AfterViewInit {
     });
   }
 
+  /**
+   * Opens the order view dialog
+   * @param order Order to view
+   */
   openViewDialog(order: Order) {
     const dialogRef &#x3D; this.dialog.open(ViewOrderDialog, { restoreFocus: false, data: order })
     dialogRef.afterClosed().subscribe(() &#x3D;&gt; {
@@ -655,22 +734,40 @@ export class EditOrderDialog implements OnInit {
   values &#x3D; Object.values(OrderStatus).filter((v) &#x3D;&gt; isNaN(Number(v)))
   enumvals &#x3D; Object.values(OrderStatus).filter((v) &#x3D;&gt; !isNaN(Number(v)))
   value &#x3D; this.getEnumKey(this.data.status)
-  constructor(@Inject(MAT_DIALOG_DATA) public data: Order) { }
+  constructor(@Inject(MAT_DIALOG_DATA) public data: Order,
+    private firebaseService: FirebaseService,
+    private alertService: AlertService
+    ) { }
+
   ngOnInit() {
 
-    console.log(this.values)
-    console.log(this.enumvals)
+    // console.log(this.values)
+    // console.log(this.enumvals)
   }
 
+  /**
+   * Converts the numerical order status to the coresponding string
+   * @param status OrderStatus to convert
+   * @returns String representaion of OrderStatus
+   */
   getEnumKey(status: OrderStatus) {
     return OrderStatus[status]
   }
 
-
-  saveOrder(data: Order) {
+  /**
+   * Saves the changes made to an order in the DB (mainly order status)
+   * @param data Order to update in the DB
+   */
+  async saveOrder(data: Order) {
     console.log(this.value)
     data.status &#x3D; this.values.indexOf(this.value) + 1
     console.log(data.status)
+    try {
+      this.firebaseService.updateOrderStatus(data, data.status)
+    } catch (err) {
+      this.alertService.presentAlert(&#x27;Error&#x27;, &#x27;Could not update order status. Please try again later.&#x27;, [&#x27;Ok&#x27;])
+    }
+    
   }
 }
 
@@ -685,6 +782,11 @@ export class ViewOrderDialog implements OnInit {
 
   }
 
+  /**
+   * Converts the numerical order status to the coresponding string
+   * @param status OrderStatus to convert
+   * @returns String representaion of OrderStatus
+   */
   getStatus(status: OrderStatus) {
     return OrderStatus[status]
   }
@@ -716,7 +818,7 @@ export class ViewOrderDialog implements OnInit {
                     &lt;mat-list&gt;
                         &lt;span *ngFor&#x3D;&quot;let item of data.items&quot;&gt;
                             &lt;mat-list-item &gt;
-                                {{item.name}}, {{item.orderQuantity}}
+                                {{item.name}}, {{item.quantity}}
                             &lt;/mat-list-item&gt;
                             &lt;mat-divider&gt;&lt;/mat-divider&gt;
                         &lt;/span&gt;
@@ -764,8 +866,8 @@ export class ViewOrderDialog implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><h1 mat-dialog-title>Order Number: {{data.id}}</h1><mat-dialog-content>    <mat-list>        <div mat-subheader>General</div>        <mat-list-item>Order Number: {{data.id}}</mat-list-item><br>        <mat-list-item>Timestamp: {{data.timestamp.toLocaleString()}}</mat-list-item><br>        <mat-list-item>            <mat-form-field appearance="fill">                <mat-label>Status</mat-label>                <mat-select [(ngModel)]="value">                    <mat-option *ngFor="let status of values" [value]="status">                        {{status}}                    </mat-option>                </mat-select>            </mat-form-field>        </mat-list-item>        <mat-divider></mat-divider><br>        <mat-list-item>            <mat-card>                <mat-card-title>Order Contents:</mat-card-title>                <mat-card-content>                    <mat-list>                        <span *ngFor="let item of data.items">                            <mat-list-item >                                {{item.name}}, {{item.orderQuantity}}                            </mat-list-item>                            <mat-divider></mat-divider>                        </span>                    </mat-list>                </mat-card-content>            </mat-card>        </mat-list-item>    </mat-list></mat-dialog-content><mat-dialog-actions>    <ion-grid>        <ion-col>            <ion-button mat-button mat-dialog-close>Cancel</ion-button>        </ion-col>        <ion-col>            <ion-button mat-button mat-dialog-close (click)="saveOrder(data)">Save</ion-button>        </ion-col>    </ion-grid></mat-dialog-actions></div>'
-    var COMPONENTS = [{'name': 'AddDialog', 'selector': 'add-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditDetailsDialog', 'selector': 'edit-details-dialog'},{'name': 'EditDialog', 'selector': 'edit-dialog'},{'name': 'EditOrderDialog', 'selector': 'edit-order-dialog'},{'name': 'ForgotPasswordPage', 'selector': 'app-forgot-password'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'InventoryManagementPage', 'selector': 'inventory-management'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'OrderManagementPage', 'selector': 'app-order-management'},{'name': 'PantryStatisticsPage', 'selector': 'app-pantry-statistics'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'SignupPage', 'selector': 'app-signup'},{'name': 'ViewOrderDialog', 'selector': 'view-order-dialog'}];
+        var COMPONENT_TEMPLATE = '<div><h1 mat-dialog-title>Order Number: {{data.id}}</h1><mat-dialog-content>    <mat-list>        <div mat-subheader>General</div>        <mat-list-item>Order Number: {{data.id}}</mat-list-item><br>        <mat-list-item>Timestamp: {{data.timestamp.toLocaleString()}}</mat-list-item><br>        <mat-list-item>            <mat-form-field appearance="fill">                <mat-label>Status</mat-label>                <mat-select [(ngModel)]="value">                    <mat-option *ngFor="let status of values" [value]="status">                        {{status}}                    </mat-option>                </mat-select>            </mat-form-field>        </mat-list-item>        <mat-divider></mat-divider><br>        <mat-list-item>            <mat-card>                <mat-card-title>Order Contents:</mat-card-title>                <mat-card-content>                    <mat-list>                        <span *ngFor="let item of data.items">                            <mat-list-item >                                {{item.name}}, {{item.quantity}}                            </mat-list-item>                            <mat-divider></mat-divider>                        </span>                    </mat-list>                </mat-card-content>            </mat-card>        </mat-list-item>    </mat-list></mat-dialog-content><mat-dialog-actions>    <ion-grid>        <ion-col>            <ion-button mat-button mat-dialog-close>Cancel</ion-button>        </ion-col>        <ion-col>            <ion-button mat-button mat-dialog-close (click)="saveOrder(data)">Save</ion-button>        </ion-col>    </ion-grid></mat-dialog-actions></div>'
+    var COMPONENTS = [{'name': 'AddDialog', 'selector': 'add-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditDetailsDialog', 'selector': 'edit-details-dialog'},{'name': 'EditDialog', 'selector': 'edit-dialog'},{'name': 'EditOrderDialog', 'selector': 'edit-order-dialog'},{'name': 'ForgotPasswordPage', 'selector': 'app-forgot-password'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'InventoryManagementPage', 'selector': 'inventory-management'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'OrderManagementPage', 'selector': 'app-order-management'},{'name': 'PantryStatisticsPage', 'selector': 'app-pantry-statistics'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'UserManagementPage', 'selector': 'app-user-management'},{'name': 'ViewOrderDialog', 'selector': 'view-order-dialog'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'EditOrderDialog'};
 </script>

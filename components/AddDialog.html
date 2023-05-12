@@ -127,6 +127,9 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <a href="#forceDisable" >forceDisable</a>
+                            </li>
+                            <li>
                                 <a href="#limitInput" >limitInput</a>
                             </li>
                             <li>
@@ -134,6 +137,9 @@
                             </li>
                             <li>
                                 <a href="#quantityInput" >quantityInput</a>
+                            </li>
+                            <li>
+                                <a href="#urlInput" >urlInput</a>
                             </li>
                         </ul>
                     </td>
@@ -148,6 +154,7 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                    <span class="modifier">Async</span>
                                 <a href="#AddItem" >AddItem</a>
                             </li>
                             <li>
@@ -165,6 +172,66 @@
     </table>
 </section>
 
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(firebaseService: <a href="../injectables/FirebaseService.html" target="_self">FirebaseService</a>, loadingService: <a href="../injectables/LoadingService.html" target="_self">LoadingService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="130" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:130</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>firebaseService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FirebaseService.html" target="_self" >FirebaseService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>loadingService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LoadingService.html" target="_self" >LoadingService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
 
 
 
@@ -181,6 +248,7 @@
                 <td class="col-md-4">
                     <a name="AddItem"></a>
                     <span class="name">
+                        <span class="modifier">Async</span>
                         <span ><b>AddItem</b></span>
                         <a href="#AddItem"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -188,24 +256,27 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>AddItem()</code>
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>AddItem()</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="118"
-                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:118</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="142"
+                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:142</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Adds item to the UI table and the DB</p>
+</div>
 
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                     </div>
                 </td>
@@ -232,8 +303,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="114"
-                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:114</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="135"
+                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:135</a></div>
                 </td>
             </tr>
 
@@ -259,6 +330,31 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="forceDisable"></a>
+                    <span class="name">
+                        <span ><b>forceDisable</b></span>
+                        <a href="#forceDisable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="130" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:130</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="limitInput"></a>
                     <span class="name">
                         <span ><b>limitInput</b></span>
@@ -274,7 +370,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="113" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:113</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="128" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:128</a></div>
                         </td>
                     </tr>
 
@@ -300,7 +396,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="111" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:111</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="126" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:126</a></div>
                         </td>
                     </tr>
 
@@ -326,7 +422,33 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="112" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:112</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="127" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:127</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="urlInput"></a>
+                    <span class="name">
+                        <span ><b>urlInput</b></span>
+                        <a href="#urlInput"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="129" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:129</a></div>
                         </td>
                     </tr>
 
@@ -345,12 +467,13 @@ import { MatMenuTrigger } from &#x27;@angular/material/menu&#x27;;
 import { MatPaginator } from &#x27;@angular/material/paginator&#x27;;
 import { MatSort } from &#x27;@angular/material/sort&#x27;;
 import { MatTableDataSource } from &#x27;@angular/material/table&#x27;;
-import {MatDialog, MatDialogRef} from &#x27;@angular/material/dialog&#x27;;
-import { AlertController } from &#x27;@ionic/angular&#x27;;
+import {MatDialog, } from &#x27;@angular/material/dialog&#x27;;
+import { AlertController, } from &#x27;@ionic/angular&#x27;;
 import { FoodItem } from &#x27;../../../../globalModels/foodItem&#x27;;
 import { FirebaseService } from &#x27;../services/firebase.service&#x27;;
 import { Inject } from &#x27;@angular/core&#x27;;
 import {MAT_DIALOG_DATA} from &#x27;@angular/material/dialog&#x27;;
+import { LoadingService } from &#x27;../services/loading.service&#x27;;
 
 
 
@@ -372,6 +495,9 @@ export class InventoryManagementPage implements AfterViewInit{
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
   @ViewChild(MatMenuTrigger) actions: MatMenuTrigger;
+
+  static addDialogRef: any
+
   constructor(
     public dialog: MatDialog,
     private alertController: AlertController,
@@ -382,12 +508,15 @@ export class InventoryManagementPage implements AfterViewInit{
     
   }
 
-  async ngAfterViewInit() {
+  async updateTableSource() {
     let data &#x3D; await this.firebaseService.getInventory()
     this.records &#x3D; new MatTableDataSource&lt;FoodItem&gt;(data)
     this.length &#x3D; this.records.data.length;
     this.records.paginator &#x3D; this.paginator;
     this.records.sort &#x3D; this.sort;
+  }
+  async ngAfterViewInit() {
+    await this.updateTableSource()
   }
 
   updateFilter(event: Event){
@@ -398,8 +527,9 @@ export class InventoryManagementPage implements AfterViewInit{
       this.records.paginator.firstPage();
     }
   }
-  removeItem(item: FoodItem) {
+  async removeItem(item: FoodItem) {
     //find the index from id
+    await this.firebaseService.removeItem(item)
     let removed &#x3D; this.records.data.splice(this.records.data.indexOf(item), 1)
     if(this.records.paginator) {
       this.records.paginator.firstPage();
@@ -427,21 +557,28 @@ export class InventoryManagementPage implements AfterViewInit{
     await alert.present();
   }
 
-  openEditDialog(item: FoodItem){
+   openEditDialog(item: FoodItem){
     const dialogRef &#x3D; this.dialog.open(EditDialog, {restoreFocus: false, data: item});
-    dialogRef.afterClosed().subscribe(() &#x3D;&gt; {
+    dialogRef.afterClosed().subscribe( () &#x3D;&gt; {
       this.actions.focus()
       this.records._updateChangeSubscription();
     });
   }
 
-  openAddDialog(){
+   async openAddDialog(){
     const dialogRef &#x3D; this.dialog.open(AddDialog, {restoreFocus: false});
-    dialogRef.afterClosed().subscribe(() &#x3D;&gt; {
+    InventoryManagementPage.addDialogRef &#x3D; dialogRef
+    dialogRef.afterClosed().subscribe( () &#x3D;&gt; {
+      this.updateTableSource()
       this.actions.focus()
       this.records._updateChangeSubscription();
     })
   }
+
+  static async closeAddDialog() {
+    await InventoryManagementPage.addDialogRef.close()
+  }
+
 }
 
 @Component({
@@ -452,19 +589,40 @@ export class AddDialog implements OnInit {
   nameInput: string
   quantityInput: number
   limitInput: number
+  urlInput: string
+  forceDisable &#x3D; false
+  constructor(
+    private firebaseService: FirebaseService,
+    private loadingService: LoadingService
+    ){}
   ngOnInit(): void {
       
   }
 
-  AddItem(){
+  /**
+   * Adds item to the UI table and the DB
+   */
+  async AddItem(){
+    this.forceDisable &#x3D; true
     //write to db or something idk
+    if(!this.limitInput) {
+      this.limitInput &#x3D; 0
+    }
     let item: FoodItem &#x3D; {
-      id: this.nameInput,
+      id: this.nameInput.toLowerCase(),
       name: this.nameInput,
       quantity: this.quantityInput,
-      limit: this.limitInput
+      limit: this.limitInput,
+      imageUrl: this.urlInput
     }
     console.log(item)
+    await this.firebaseService.addItem(item).then(() &#x3D;&gt; {
+      InventoryManagementPage.closeAddDialog()
+      this.forceDisable &#x3D; false
+    }).catch((err) &#x3D;&gt; {
+      this.forceDisable &#x3D; false
+    })
+    this.forceDisable &#x3D; false
   }
 }
 
@@ -473,7 +631,8 @@ export class AddDialog implements OnInit {
   templateUrl: &#x27;edit-dialog.html&#x27;
 })
 export class EditDialog implements OnInit{
-  constructor(@Inject(MAT_DIALOG_DATA) public data: FoodItem){}
+  constructor(@Inject(MAT_DIALOG_DATA) public data: FoodItem,
+  private firebaseService: FirebaseService){}
   private cancelItem &#x3D; 0;
   private cancelLimit &#x3D; 0;
   //private name &#x3D; this.data.name;
@@ -482,16 +641,28 @@ export class EditDialog implements OnInit{
     console.log(this.data)
   }
 
+  /**
+   * increments item quantity
+   * @param item FoodItem to increment
+   */
   addItem(item: FoodItem){
     item.quantity &#x3D; item.quantity + 1;
     this.cancelItem &#x3D; this.cancelItem - 1;
   }
 
+  /**
+   * decrements item quantity
+   * @param item FoodItem to decrement
+   */
   removeItem(item: FoodItem){
     item.quantity &#x3D; item.quantity - 1;
     this.cancelItem &#x3D; this.cancelItem + 1;
   }
 
+  /**
+   * increments and items&#x27;s limit
+   * @param item FoodItem that will have limit modifed
+   */
   addLimit(item: FoodItem){
     if(item.limit){
       item.limit &#x3D; item.limit + 1
@@ -502,6 +673,10 @@ export class EditDialog implements OnInit{
     }
   }
 
+  /**
+   * decrements and item&#x27;s limit
+   * @param item FoodItem that will have limit modified
+   */
   removeLimit(item: FoodItem){
     if(item.limit){
       item.limit &#x3D; item.limit - 1;
@@ -512,14 +687,23 @@ export class EditDialog implements OnInit{
     }
   }
 
-  saveData(item: FoodItem){
+  /**
+   * Updates DB info for an item. Called when item changes are saved
+   * @param item FoodItem to update in database
+   */
+  async saveData(item: FoodItem){
     //write to db
     console.log(this.nameInput)
     if(this.nameInput !&#x3D; &quot;&quot;){
       item.name &#x3D; this.nameInput
     }
+    await this.firebaseService.updateInventoryItem(item)
   }
 
+  /**
+   * Discards changes made to food item. Called when Cancel is pressed
+   * @param item FoodItem to discard changes for
+   */
   cancelData(item: FoodItem){
     item.quantity &#x3D; item.quantity + this.cancelItem;
     if(item.limit){
@@ -541,6 +725,10 @@ export class EditDialog implements OnInit{
             &lt;mat-label&gt;Name&lt;/mat-label&gt;
             &lt;input name&#x3D;&quot;name&quot; matInput [(ngModel)]&#x3D;&quot;nameInput&quot; required&gt;
         &lt;/mat-form-field&gt;
+        &lt;mat-form-field&gt;
+            &lt;mat-label&gt;Image URL&lt;/mat-label&gt;
+            &lt;input name&#x3D;&quot;imageUrl&quot; matInput [(ngModel)]&#x3D;&quot;urlInput&quot; required&gt;
+        &lt;/mat-form-field&gt;
         &lt;mat-form-field appearance&#x3D;&quot;fill&quot;&gt;
             &lt;mat-label&gt;Quantity&lt;/mat-label&gt;
             &lt;input name&#x3D;&quot;quan&quot; matInput [(ngModel)]&#x3D;&quot;quantityInput&quot; type&#x3D;&quot;number&quot; required&gt;
@@ -559,7 +747,10 @@ export class EditDialog implements OnInit{
             &lt;ion-button mat-button mat-dialog-close&gt;Cancel&lt;/ion-button&gt;
         &lt;/ion-col&gt;
         &lt;ion-col&gt;
-            &lt;ion-button mat-button mat-dialog-close [disabled]&#x3D;&quot;!(nameInput &amp;&amp; quantityInput)&quot;&gt;Add Item&lt;/ion-button&gt;
+            &lt;ion-button mat-button 
+            [disabled]&#x3D;&quot;!(nameInput &amp;&amp; (quantityInput || quantityInput &#x3D;&#x3D;&#x3D; 0) 
+            &amp;&amp; quantityInput &gt;&#x3D; 0 &amp;&amp; (limitInput &gt;&#x3D; 0 || !limitInput) &amp;&amp; urlInput) || forceDisable&quot; 
+            (click)&#x3D;&quot;AddItem()&quot;&gt;Add Item&lt;/ion-button&gt;
         &lt;/ion-col&gt;
     &lt;/ion-row&gt;
 &lt;/ion-grid&gt;
@@ -592,8 +783,8 @@ export class EditDialog implements OnInit{
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><h1 mat-dialog-title>Add Item</h1><mat-dialog-content>    <form #addForm="ngForm">        <mat-form-field appearance="fill">            <mat-label>Name</mat-label>            <input name="name" matInput [(ngModel)]="nameInput" required>        </mat-form-field>        <mat-form-field appearance="fill">            <mat-label>Quantity</mat-label>            <input name="quan" matInput [(ngModel)]="quantityInput" type="number" required>        </mat-form-field>        <mat-form-field appearance="fill">            <mat-label>Limit</mat-label>            <input name="limit" matInput [(ngModel)]="limitInput" type="number">        </mat-form-field>    </form>        </mat-dialog-content><mat-dialog-actions><ion-grid>    <ion-row>        <ion-col>            <ion-button mat-button mat-dialog-close>Cancel</ion-button>        </ion-col>        <ion-col>            <ion-button mat-button mat-dialog-close [disabled]="!(nameInput && quantityInput)">Add Item</ion-button>        </ion-col>    </ion-row></ion-grid></mat-dialog-actions></div>'
-    var COMPONENTS = [{'name': 'AddDialog', 'selector': 'add-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditDetailsDialog', 'selector': 'edit-details-dialog'},{'name': 'EditDialog', 'selector': 'edit-dialog'},{'name': 'EditOrderDialog', 'selector': 'edit-order-dialog'},{'name': 'ForgotPasswordPage', 'selector': 'app-forgot-password'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'InventoryManagementPage', 'selector': 'inventory-management'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'OrderManagementPage', 'selector': 'app-order-management'},{'name': 'PantryStatisticsPage', 'selector': 'app-pantry-statistics'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'SignupPage', 'selector': 'app-signup'},{'name': 'ViewOrderDialog', 'selector': 'view-order-dialog'}];
+        var COMPONENT_TEMPLATE = '<div><h1 mat-dialog-title>Add Item</h1><mat-dialog-content>    <form #addForm="ngForm">        <mat-form-field appearance="fill">            <mat-label>Name</mat-label>            <input name="name" matInput [(ngModel)]="nameInput" required>        </mat-form-field>        <mat-form-field>            <mat-label>Image URL</mat-label>            <input name="imageUrl" matInput [(ngModel)]="urlInput" required>        </mat-form-field>        <mat-form-field appearance="fill">            <mat-label>Quantity</mat-label>            <input name="quan" matInput [(ngModel)]="quantityInput" type="number" required>        </mat-form-field>        <mat-form-field appearance="fill">            <mat-label>Limit</mat-label>            <input name="limit" matInput [(ngModel)]="limitInput" type="number">        </mat-form-field>    </form>        </mat-dialog-content><mat-dialog-actions><ion-grid>    <ion-row>        <ion-col>            <ion-button mat-button mat-dialog-close>Cancel</ion-button>        </ion-col>        <ion-col>            <ion-button mat-button             [disabled]="!(nameInput && (quantityInput || quantityInput === 0)             && quantityInput >= 0 && (limitInput >= 0 || !limitInput) && urlInput) || forceDisable"             (click)="AddItem()">Add Item</ion-button>        </ion-col>    </ion-row></ion-grid></mat-dialog-actions></div>'
+    var COMPONENTS = [{'name': 'AddDialog', 'selector': 'add-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditDetailsDialog', 'selector': 'edit-details-dialog'},{'name': 'EditDialog', 'selector': 'edit-dialog'},{'name': 'EditOrderDialog', 'selector': 'edit-order-dialog'},{'name': 'ForgotPasswordPage', 'selector': 'app-forgot-password'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'InventoryManagementPage', 'selector': 'inventory-management'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'OrderManagementPage', 'selector': 'app-order-management'},{'name': 'PantryStatisticsPage', 'selector': 'app-pantry-statistics'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'UserManagementPage', 'selector': 'app-user-management'},{'name': 'ViewOrderDialog', 'selector': 'view-order-dialog'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'AddDialog'};
 </script>

@@ -206,13 +206,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/ProfilePageModule.html" data-type="entity-link" >ProfilePageModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-ProfilePageModule-37217966bcaa82749fe92af2f675e927490604e7d492edce9c054a9b3469b943048396367d4cf23d8a722265d7296d765db17f1ba136dbfb3644fcb1ba6c2f63"' : 'data-target="#xs-components-links-module-ProfilePageModule-37217966bcaa82749fe92af2f675e927490604e7d492edce9c054a9b3469b943048396367d4cf23d8a722265d7296d765db17f1ba136dbfb3644fcb1ba6c2f63"' }>
+                                            'data-target="#components-links-module-ProfilePageModule-cc9a03c6c08a9745d800dac982369e58626716a10f163095327194ffcaad6a3a5b2e45e1703170dcb430eee28b99ed54ac4222cfa4b03e8831bf4ac305b40ec5"' : 'data-target="#xs-components-links-module-ProfilePageModule-cc9a03c6c08a9745d800dac982369e58626716a10f163095327194ffcaad6a3a5b2e45e1703170dcb430eee28b99ed54ac4222cfa4b03e8831bf4ac305b40ec5"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-ProfilePageModule-37217966bcaa82749fe92af2f675e927490604e7d492edce9c054a9b3469b943048396367d4cf23d8a722265d7296d765db17f1ba136dbfb3644fcb1ba6c2f63"' :
-                                            'id="xs-components-links-module-ProfilePageModule-37217966bcaa82749fe92af2f675e927490604e7d492edce9c054a9b3469b943048396367d4cf23d8a722265d7296d765db17f1ba136dbfb3644fcb1ba6c2f63"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-ProfilePageModule-cc9a03c6c08a9745d800dac982369e58626716a10f163095327194ffcaad6a3a5b2e45e1703170dcb430eee28b99ed54ac4222cfa4b03e8831bf4ac305b40ec5"' :
+                                            'id="xs-components-links-module-ProfilePageModule-cc9a03c6c08a9745d800dac982369e58626716a10f163095327194ffcaad6a3a5b2e45e1703170dcb430eee28b99ed54ac4222cfa4b03e8831bf4ac305b40ec5"' }>
                                             <li class="link">
                                                 <a href="components/EditDetailsDialog.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >EditDetailsDialog</a>
                                             </li>
@@ -226,24 +226,24 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/ProfilePageRoutingModule.html" data-type="entity-link" >ProfilePageRoutingModule</a>
                             </li>
                             <li class="link">
-                                <a href="modules/SignupPageModule.html" data-type="entity-link" >SignupPageModule</a>
+                                <a href="modules/UserManagementPageModule.html" data-type="entity-link" >UserManagementPageModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-SignupPageModule-b1a7bd6848be852ec44c81adce547c4af28e2bb344017c130ca0feccc995abfd096a581728fe2540c41566b3dd9c86c6d825e4e95b701010eb3d9a221f0c7d90"' : 'data-target="#xs-components-links-module-SignupPageModule-b1a7bd6848be852ec44c81adce547c4af28e2bb344017c130ca0feccc995abfd096a581728fe2540c41566b3dd9c86c6d825e4e95b701010eb3d9a221f0c7d90"' }>
+                                            'data-target="#components-links-module-UserManagementPageModule-bd8d38585efe238abf558dab2b21c471a890588f0bfa48e8024ed382e276bd2c828561caf8e556eb4b57bc4bf595ad6bcf90ca47d0dd80837ed55e87cc101e44"' : 'data-target="#xs-components-links-module-UserManagementPageModule-bd8d38585efe238abf558dab2b21c471a890588f0bfa48e8024ed382e276bd2c828561caf8e556eb4b57bc4bf595ad6bcf90ca47d0dd80837ed55e87cc101e44"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-SignupPageModule-b1a7bd6848be852ec44c81adce547c4af28e2bb344017c130ca0feccc995abfd096a581728fe2540c41566b3dd9c86c6d825e4e95b701010eb3d9a221f0c7d90"' :
-                                            'id="xs-components-links-module-SignupPageModule-b1a7bd6848be852ec44c81adce547c4af28e2bb344017c130ca0feccc995abfd096a581728fe2540c41566b3dd9c86c6d825e4e95b701010eb3d9a221f0c7d90"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-UserManagementPageModule-bd8d38585efe238abf558dab2b21c471a890588f0bfa48e8024ed382e276bd2c828561caf8e556eb4b57bc4bf595ad6bcf90ca47d0dd80837ed55e87cc101e44"' :
+                                            'id="xs-components-links-module-UserManagementPageModule-bd8d38585efe238abf558dab2b21c471a890588f0bfa48e8024ed382e276bd2c828561caf8e556eb4b57bc4bf595ad6bcf90ca47d0dd80837ed55e87cc101e44"' }>
                                             <li class="link">
-                                                <a href="components/SignupPage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >SignupPage</a>
+                                                <a href="components/UserManagementPage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >UserManagementPage</a>
                                             </li>
                                         </ul>
                                     </li>
                             </li>
                             <li class="link">
-                                <a href="modules/SignupPageRoutingModule.html" data-type="entity-link" >SignupPageRoutingModule</a>
+                                <a href="modules/UserManagementPageRoutingModule.html" data-type="entity-link" >UserManagementPageRoutingModule</a>
                             </li>
                 </ul>
                 </li>
@@ -256,13 +256,35 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             </div>
                             <ul class="links collapse " ${ isNormalMode ? 'id="injectables-links"' : 'id="xs-injectables-links"' }>
                                 <li class="link">
+                                    <a href="injectables/AlertService.html" data-type="entity-link" >AlertService</a>
+                                </li>
+                                <li class="link">
                                     <a href="injectables/AuthService.html" data-type="entity-link" >AuthService</a>
                                 </li>
                                 <li class="link">
                                     <a href="injectables/FirebaseService.html" data-type="entity-link" >FirebaseService</a>
                                 </li>
+                                <li class="link">
+                                    <a href="injectables/ForecastService.html" data-type="entity-link" >ForecastService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="injectables/LoadingService.html" data-type="entity-link" >LoadingService</a>
+                                </li>
                             </ul>
                         </li>
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#guards-links"' :
+                            'data-target="#xs-guards-links"' }>
+                            <span class="icon ion-ios-lock"></span>
+                            <span>Guards</span>
+                            <span class="icon ion-ios-arrow-down"></span>
+                        </div>
+                        <ul class="links collapse " ${ isNormalMode ? 'id="guards-links"' : 'id="xs-guards-links"' }>
+                            <li class="link">
+                                <a href="guards/AuthGuard.html" data-type="entity-link" >AuthGuard</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#interfaces-links"' :
                             'data-target="#xs-interfaces-links"' }>
@@ -273,6 +295,18 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                         <ul class="links collapse " ${ isNormalMode ? ' id="interfaces-links"' : 'id="xs-interfaces-links"' }>
                             <li class="link">
                                 <a href="interfaces/Pantry.html" data-type="entity-link" >Pantry</a>
+                            </li>
+                            <li class="link">
+                                <a href="interfaces/TimestampedItems.html" data-type="entity-link" >TimestampedItems</a>
+                            </li>
+                            <li class="link">
+                                <a href="interfaces/TimestampedItems-1.html" data-type="entity-link" >TimestampedItems</a>
+                            </li>
+                            <li class="link">
+                                <a href="interfaces/TimestampedOrders.html" data-type="entity-link" >TimestampedOrders</a>
+                            </li>
+                            <li class="link">
+                                <a href="interfaces/TimestampedOrders-1.html" data-type="entity-link" >TimestampedOrders</a>
                             </li>
                         </ul>
                     </li>

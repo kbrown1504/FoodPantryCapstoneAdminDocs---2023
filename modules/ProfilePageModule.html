@@ -184,6 +184,9 @@ import { ProfilePageRoutingModule } from &#x27;./profile-routing.module&#x27;;
 
 import { EditDetailsDialog, ProfilePage } from &#x27;./profile.page&#x27;;
 import { MatDialogModule } from &#x27;@angular/material/dialog&#x27;;
+import { ColorPickerModule } from &#x27;ngx-color-picker&#x27;;
+import {MatInputModule} from &#x27;@angular/material/input&#x27;;
+
 
 @NgModule({
   imports: [
@@ -191,7 +194,9 @@ import { MatDialogModule } from &#x27;@angular/material/dialog&#x27;;
     FormsModule,
     IonicModule,
     ProfilePageRoutingModule,
-    MatDialogModule
+    MatDialogModule,
+    ColorPickerModule,
+    MatInputModule
   ],
   declarations: [ProfilePage, EditDetailsDialog]
 })

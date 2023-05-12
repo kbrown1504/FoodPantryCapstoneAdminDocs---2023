@@ -172,6 +172,7 @@
                                 <a href="#removeLimit" >removeLimit</a>
                             </li>
                             <li>
+                                    <span class="modifier">Async</span>
                                 <a href="#saveData" >saveData</a>
                             </li>
                         </ul>
@@ -192,12 +193,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(data: FoodItem)</code>
+<code>constructor(data: FoodItem, firebaseService: <a href="../injectables/FirebaseService.html" target="_self">FirebaseService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="134" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:134</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="170" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:170</a></div>
                             </td>
                         </tr>
 
@@ -219,6 +220,18 @@
                                                   
                                                         <td>
                                                                     <code>FoodItem</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>firebaseService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FirebaseService.html" target="_self" >FirebaseService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -264,14 +277,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="144"
-                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:144</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="185"
+                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:185</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>increments item quantity</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -282,6 +297,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -296,6 +312,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>FoodItem to increment</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -333,14 +353,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="154"
-                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:154</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="203"
+                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:203</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>increments and items&#39;s limit</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -351,6 +373,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -365,6 +388,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>FoodItem that will have limit modifed</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -402,14 +429,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="182"
-                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:182</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="244"
+                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:244</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Discards changes made to food item. Called when Cancel is pressed</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -420,6 +449,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -434,6 +464,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>FoodItem to discard changes for</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -471,8 +505,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="140"
-                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:140</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="177"
+                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:177</a></div>
                 </td>
             </tr>
 
@@ -508,14 +542,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="149"
-                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:149</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="194"
+                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:194</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>decrements item quantity</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -526,6 +562,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -540,6 +577,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>FoodItem to decrement</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -577,14 +618,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="164"
-                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:164</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="217"
+                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:217</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>decrements and item&#39;s limit</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -595,6 +638,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -609,6 +653,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>FoodItem that will have limit modified</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -632,6 +680,7 @@
                 <td class="col-md-4">
                     <a name="saveData"></a>
                     <span class="name">
+                        <span class="modifier">Async</span>
                         <span ><b>saveData</b></span>
                         <a href="#saveData"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -639,21 +688,24 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>saveData(item: FoodItem)</code>
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>saveData(item: FoodItem)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="174"
-                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:174</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="231"
+                            class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:231</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Updates DB info for an item. Called when item changes are saved</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -664,6 +716,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -678,6 +731,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>FoodItem to update in database</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -685,7 +742,7 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                     </div>
                     <div class="io-description">
@@ -726,7 +783,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="136" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:136</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="173" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:173</a></div>
                         </td>
                     </tr>
 
@@ -758,7 +815,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="137" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:137</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="174" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:174</a></div>
                         </td>
                     </tr>
 
@@ -794,7 +851,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="135" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:135</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="171" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:171</a></div>
                         </td>
                     </tr>
 
@@ -825,7 +882,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="139" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:139</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="176" class="link-to-prism">src/app/inventory-management/inventory-management.page.ts:176</a></div>
                         </td>
                     </tr>
 
@@ -844,12 +901,13 @@ import { MatMenuTrigger } from &#x27;@angular/material/menu&#x27;;
 import { MatPaginator } from &#x27;@angular/material/paginator&#x27;;
 import { MatSort } from &#x27;@angular/material/sort&#x27;;
 import { MatTableDataSource } from &#x27;@angular/material/table&#x27;;
-import {MatDialog, MatDialogRef} from &#x27;@angular/material/dialog&#x27;;
-import { AlertController } from &#x27;@ionic/angular&#x27;;
+import {MatDialog, } from &#x27;@angular/material/dialog&#x27;;
+import { AlertController, } from &#x27;@ionic/angular&#x27;;
 import { FoodItem } from &#x27;../../../../globalModels/foodItem&#x27;;
 import { FirebaseService } from &#x27;../services/firebase.service&#x27;;
 import { Inject } from &#x27;@angular/core&#x27;;
 import {MAT_DIALOG_DATA} from &#x27;@angular/material/dialog&#x27;;
+import { LoadingService } from &#x27;../services/loading.service&#x27;;
 
 
 
@@ -871,6 +929,9 @@ export class InventoryManagementPage implements AfterViewInit{
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
   @ViewChild(MatMenuTrigger) actions: MatMenuTrigger;
+
+  static addDialogRef: any
+
   constructor(
     public dialog: MatDialog,
     private alertController: AlertController,
@@ -881,12 +942,15 @@ export class InventoryManagementPage implements AfterViewInit{
     
   }
 
-  async ngAfterViewInit() {
+  async updateTableSource() {
     let data &#x3D; await this.firebaseService.getInventory()
     this.records &#x3D; new MatTableDataSource&lt;FoodItem&gt;(data)
     this.length &#x3D; this.records.data.length;
     this.records.paginator &#x3D; this.paginator;
     this.records.sort &#x3D; this.sort;
+  }
+  async ngAfterViewInit() {
+    await this.updateTableSource()
   }
 
   updateFilter(event: Event){
@@ -897,8 +961,9 @@ export class InventoryManagementPage implements AfterViewInit{
       this.records.paginator.firstPage();
     }
   }
-  removeItem(item: FoodItem) {
+  async removeItem(item: FoodItem) {
     //find the index from id
+    await this.firebaseService.removeItem(item)
     let removed &#x3D; this.records.data.splice(this.records.data.indexOf(item), 1)
     if(this.records.paginator) {
       this.records.paginator.firstPage();
@@ -926,21 +991,28 @@ export class InventoryManagementPage implements AfterViewInit{
     await alert.present();
   }
 
-  openEditDialog(item: FoodItem){
+   openEditDialog(item: FoodItem){
     const dialogRef &#x3D; this.dialog.open(EditDialog, {restoreFocus: false, data: item});
-    dialogRef.afterClosed().subscribe(() &#x3D;&gt; {
+    dialogRef.afterClosed().subscribe( () &#x3D;&gt; {
       this.actions.focus()
       this.records._updateChangeSubscription();
     });
   }
 
-  openAddDialog(){
+   async openAddDialog(){
     const dialogRef &#x3D; this.dialog.open(AddDialog, {restoreFocus: false});
-    dialogRef.afterClosed().subscribe(() &#x3D;&gt; {
+    InventoryManagementPage.addDialogRef &#x3D; dialogRef
+    dialogRef.afterClosed().subscribe( () &#x3D;&gt; {
+      this.updateTableSource()
       this.actions.focus()
       this.records._updateChangeSubscription();
     })
   }
+
+  static async closeAddDialog() {
+    await InventoryManagementPage.addDialogRef.close()
+  }
+
 }
 
 @Component({
@@ -951,19 +1023,40 @@ export class AddDialog implements OnInit {
   nameInput: string
   quantityInput: number
   limitInput: number
+  urlInput: string
+  forceDisable &#x3D; false
+  constructor(
+    private firebaseService: FirebaseService,
+    private loadingService: LoadingService
+    ){}
   ngOnInit(): void {
       
   }
 
-  AddItem(){
+  /**
+   * Adds item to the UI table and the DB
+   */
+  async AddItem(){
+    this.forceDisable &#x3D; true
     //write to db or something idk
+    if(!this.limitInput) {
+      this.limitInput &#x3D; 0
+    }
     let item: FoodItem &#x3D; {
-      id: this.nameInput,
+      id: this.nameInput.toLowerCase(),
       name: this.nameInput,
       quantity: this.quantityInput,
-      limit: this.limitInput
+      limit: this.limitInput,
+      imageUrl: this.urlInput
     }
     console.log(item)
+    await this.firebaseService.addItem(item).then(() &#x3D;&gt; {
+      InventoryManagementPage.closeAddDialog()
+      this.forceDisable &#x3D; false
+    }).catch((err) &#x3D;&gt; {
+      this.forceDisable &#x3D; false
+    })
+    this.forceDisable &#x3D; false
   }
 }
 
@@ -972,7 +1065,8 @@ export class AddDialog implements OnInit {
   templateUrl: &#x27;edit-dialog.html&#x27;
 })
 export class EditDialog implements OnInit{
-  constructor(@Inject(MAT_DIALOG_DATA) public data: FoodItem){}
+  constructor(@Inject(MAT_DIALOG_DATA) public data: FoodItem,
+  private firebaseService: FirebaseService){}
   private cancelItem &#x3D; 0;
   private cancelLimit &#x3D; 0;
   //private name &#x3D; this.data.name;
@@ -981,16 +1075,28 @@ export class EditDialog implements OnInit{
     console.log(this.data)
   }
 
+  /**
+   * increments item quantity
+   * @param item FoodItem to increment
+   */
   addItem(item: FoodItem){
     item.quantity &#x3D; item.quantity + 1;
     this.cancelItem &#x3D; this.cancelItem - 1;
   }
 
+  /**
+   * decrements item quantity
+   * @param item FoodItem to decrement
+   */
   removeItem(item: FoodItem){
     item.quantity &#x3D; item.quantity - 1;
     this.cancelItem &#x3D; this.cancelItem + 1;
   }
 
+  /**
+   * increments and items&#x27;s limit
+   * @param item FoodItem that will have limit modifed
+   */
   addLimit(item: FoodItem){
     if(item.limit){
       item.limit &#x3D; item.limit + 1
@@ -1001,6 +1107,10 @@ export class EditDialog implements OnInit{
     }
   }
 
+  /**
+   * decrements and item&#x27;s limit
+   * @param item FoodItem that will have limit modified
+   */
   removeLimit(item: FoodItem){
     if(item.limit){
       item.limit &#x3D; item.limit - 1;
@@ -1011,14 +1121,23 @@ export class EditDialog implements OnInit{
     }
   }
 
-  saveData(item: FoodItem){
+  /**
+   * Updates DB info for an item. Called when item changes are saved
+   * @param item FoodItem to update in database
+   */
+  async saveData(item: FoodItem){
     //write to db
     console.log(this.nameInput)
     if(this.nameInput !&#x3D; &quot;&quot;){
       item.name &#x3D; this.nameInput
     }
+    await this.firebaseService.updateInventoryItem(item)
   }
 
+  /**
+   * Discards changes made to food item. Called when Cancel is pressed
+   * @param item FoodItem to discard changes for
+   */
   cancelData(item: FoodItem){
     item.quantity &#x3D; item.quantity + this.cancelItem;
     if(item.limit){
@@ -1045,13 +1164,13 @@ export class EditDialog implements OnInit{
             &lt;/ion-col&gt;
         &lt;/ion-row&gt;
         &lt;ion-row&gt;
-            &lt;ion-col&gt;Quantity: {{data.quantity}}&lt;/ion-col&gt;
-            &lt;ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;auto&quot;&gt;Quantity: {{data.quantity}}&lt;/ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;auto&quot;&gt;
                 &lt;ion-button fill&#x3D;&quot;clear&quot; (click)&#x3D;&quot;removeItem(data)&quot;&gt;
                     &lt;ion-icon name&#x3D;&quot;remove-outline&quot;&gt;&lt;/ion-icon&gt;
                 &lt;/ion-button&gt;
             &lt;/ion-col&gt;
-            &lt;ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;auto&quot;&gt;
                 &lt;ion-button fill&#x3D;&quot;clear&quot; (click)&#x3D;&quot;addItem(data)&quot;&gt;
                     &lt;ion-icon name&#x3D;&quot;add-outline&quot;&gt;&lt;/ion-icon&gt;
                 &lt;/ion-button&gt;
@@ -1059,17 +1178,17 @@ export class EditDialog implements OnInit{
         &lt;/ion-row&gt;
         &lt;ion-row&gt;
             &lt;div *ngIf&#x3D;&quot;data.limit; else elseBlock&quot;&gt;
-                &lt;ion-col&gt;Limit: {{data.limit}}&lt;/ion-col&gt;
+                &lt;ion-col size&#x3D;&quot;auto&quot;&gt;Limit: {{data.limit}}&lt;/ion-col&gt;
             &lt;/div&gt;
             &lt;ng-template #elseBlock&gt;
-                &lt;ion-col&gt;Limit: None&lt;/ion-col&gt;
+                &lt;ion-col size&#x3D;&quot;auto&quot;&gt;Limit: None&lt;/ion-col&gt;
             &lt;/ng-template&gt;
-            &lt;ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;auto&quot;&gt;
                 &lt;ion-button fill&#x3D;&quot;clear&quot; (click)&#x3D;&quot;removeLimit(data)&quot;&gt;
                     &lt;ion-icon name&#x3D;&quot;remove-outline&quot;&gt;&lt;/ion-icon&gt;
                 &lt;/ion-button&gt;
             &lt;/ion-col&gt;
-            &lt;ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;auto&quot;&gt;
                 &lt;ion-button fill&#x3D;&quot;clear&quot; (click)&#x3D;&quot;addLimit(data)&quot;&gt;
                     &lt;ion-icon name&#x3D;&quot;add-outline&quot;&gt;&lt;/ion-icon&gt;
                 &lt;/ion-button&gt;
@@ -1119,8 +1238,8 @@ export class EditDialog implements OnInit{
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><h1 mat-dialog-title>{{data.name}}</h1><mat-dialog-content>    <h2>If an item has no limit, use the buttons to add one.</h2>    <ion-grid>        <ion-row>            <ion-col>Name:</ion-col>            <ion-col>                <ion-input                 placeholder="{{data.name}}"                fill="solid" [(ngModel)]="nameInput"></ion-input>            </ion-col>        </ion-row>        <ion-row>            <ion-col>Quantity: {{data.quantity}}</ion-col>            <ion-col>                <ion-button fill="clear" (click)="removeItem(data)">                    <ion-icon name="remove-outline"></ion-icon>                </ion-button>            </ion-col>            <ion-col>                <ion-button fill="clear" (click)="addItem(data)">                    <ion-icon name="add-outline"></ion-icon>                </ion-button>            </ion-col>        </ion-row>        <ion-row>            <div *ngIf="data.limit; else elseBlock">                <ion-col>Limit: {{data.limit}}</ion-col>            </div>            <ng-template #elseBlock>                <ion-col>Limit: None</ion-col>            </ng-template>            <ion-col>                <ion-button fill="clear" (click)="removeLimit(data)">                    <ion-icon name="remove-outline"></ion-icon>                </ion-button>            </ion-col>            <ion-col>                <ion-button fill="clear" (click)="addLimit(data)">                    <ion-icon name="add-outline"></ion-icon>                </ion-button>            </ion-col>        </ion-row>    </ion-grid></mat-dialog-content><mat-dialog-actions>    <ion-grid>        <ion-row>            <ion-col>                <ion-button mat-button mat-dialog-close (click)="cancelData(data)">Close</ion-button>            </ion-col>            <ion-col>                <ion-button mat-button mat-dialog-close (click)="saveData(data)">Save</ion-button>            </ion-col>        </ion-row>    </ion-grid>    </mat-dialog-actions>  </div>'
-    var COMPONENTS = [{'name': 'AddDialog', 'selector': 'add-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditDetailsDialog', 'selector': 'edit-details-dialog'},{'name': 'EditDialog', 'selector': 'edit-dialog'},{'name': 'EditOrderDialog', 'selector': 'edit-order-dialog'},{'name': 'ForgotPasswordPage', 'selector': 'app-forgot-password'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'InventoryManagementPage', 'selector': 'inventory-management'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'OrderManagementPage', 'selector': 'app-order-management'},{'name': 'PantryStatisticsPage', 'selector': 'app-pantry-statistics'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'SignupPage', 'selector': 'app-signup'},{'name': 'ViewOrderDialog', 'selector': 'view-order-dialog'}];
+        var COMPONENT_TEMPLATE = '<div><h1 mat-dialog-title>{{data.name}}</h1><mat-dialog-content>    <h2>If an item has no limit, use the buttons to add one.</h2>    <ion-grid>        <ion-row>            <ion-col>Name:</ion-col>            <ion-col>                <ion-input                 placeholder="{{data.name}}"                fill="solid" [(ngModel)]="nameInput"></ion-input>            </ion-col>        </ion-row>        <ion-row>            <ion-col size="auto">Quantity: {{data.quantity}}</ion-col>            <ion-col size="auto">                <ion-button fill="clear" (click)="removeItem(data)">                    <ion-icon name="remove-outline"></ion-icon>                </ion-button>            </ion-col>            <ion-col size="auto">                <ion-button fill="clear" (click)="addItem(data)">                    <ion-icon name="add-outline"></ion-icon>                </ion-button>            </ion-col>        </ion-row>        <ion-row>            <div *ngIf="data.limit; else elseBlock">                <ion-col size="auto">Limit: {{data.limit}}</ion-col>            </div>            <ng-template #elseBlock>                <ion-col size="auto">Limit: None</ion-col>            </ng-template>            <ion-col size="auto">                <ion-button fill="clear" (click)="removeLimit(data)">                    <ion-icon name="remove-outline"></ion-icon>                </ion-button>            </ion-col>            <ion-col size="auto">                <ion-button fill="clear" (click)="addLimit(data)">                    <ion-icon name="add-outline"></ion-icon>                </ion-button>            </ion-col>        </ion-row>    </ion-grid></mat-dialog-content><mat-dialog-actions>    <ion-grid>        <ion-row>            <ion-col>                <ion-button mat-button mat-dialog-close (click)="cancelData(data)">Close</ion-button>            </ion-col>            <ion-col>                <ion-button mat-button mat-dialog-close (click)="saveData(data)">Save</ion-button>            </ion-col>        </ion-row>    </ion-grid>    </mat-dialog-actions>  </div>'
+    var COMPONENTS = [{'name': 'AddDialog', 'selector': 'add-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditDetailsDialog', 'selector': 'edit-details-dialog'},{'name': 'EditDialog', 'selector': 'edit-dialog'},{'name': 'EditOrderDialog', 'selector': 'edit-order-dialog'},{'name': 'ForgotPasswordPage', 'selector': 'app-forgot-password'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'InventoryManagementPage', 'selector': 'inventory-management'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'OrderManagementPage', 'selector': 'app-order-management'},{'name': 'PantryStatisticsPage', 'selector': 'app-pantry-statistics'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'UserManagementPage', 'selector': 'app-user-management'},{'name': 'ViewOrderDialog', 'selector': 'view-order-dialog'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'EditDialog'};
 </script>

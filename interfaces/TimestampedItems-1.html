@@ -1,0 +1,739 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>adminApp documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">adminApp documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content interface">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Interfaces</li>
+  <li
+  >
+  TimestampedItems</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/services/forecast.service.ts</code>
+        </p>
+
+
+
+
+        <section>
+            <h3 id="index">Index</h3>
+            <table class="table table-sm table-bordered index-table">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Properties</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                        <a href="#items" 
+>
+                                            items
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="#month" 
+>
+                                            month
+                                        </a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+            <section>
+                <h3 id="inputs">Properties</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="items"></a>
+                                        <span class="name "><b>items</b>
+                                            <a href="#items">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>items:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="month"></a>
+                                        <span class="name "><b>month</b>
+                                            <a href="#month">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>month:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+            </section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+
+import { FoodItem } from &#x27;../../../../globalModels/foodItem&#x27;
+import { Order } from &#x27;../../../../globalModels/order&#x27;
+import { Pantry } from &#x27;../../../../globalModels/pantry&#x27;
+import { FirebaseService } from &#x27;./firebase.service&#x27;;
+import { OrderStatus } from &#x27;../../../../globalModels/orderStatus&#x27;;
+
+
+interface TimestampedOrders {
+  orders: number
+  month: string
+}
+interface TimestampedItems {
+  items: number
+  month: string
+}
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+
+export class ForecastService {
+
+  pantry: Pantry
+  inventory: FoodItem[]
+  orders: Order[]
+
+  constructor() {
+
+  }
+
+  setData(dataPantry: Pantry, dataInventory: FoodItem[], dataOrders: Order[]) {
+    this.pantry &#x3D; dataPantry
+    this.inventory &#x3D; dataInventory
+    this.orders &#x3D; dataOrders
+  }
+  /**
+   * @brief Returns the total numbers of orders for a given pantry
+   * @param type optional OrderStatus stating the desired OrderStatus
+   * @returns number of orders, optionally of a type
+   */
+  getNumOrder(type?: OrderStatus): number {
+    let retval &#x3D; 0
+    if (type) {
+      this.orders.forEach(order &#x3D;&gt; {
+        if (order.status &#x3D;&#x3D;&#x3D; type) {
+          retval +&#x3D; 1
+        }
+      });
+    }
+    else if (this.orders) {
+      retval &#x3D; this.orders?.length
+    }
+    return retval
+  }
+
+  /**
+   * @brief Gets a list of all food items of order types not cancelled or picked up
+   * @returns FoodItem list of all active items
+   */
+  getOutstandingItems(): FoodItem[] {
+    let retval: FoodItem[] &#x3D; []
+    this.orders.forEach(order &#x3D;&gt; {
+      if (order.status &#x3D;&#x3D;&#x3D; OrderStatus.Processing) {
+        retval &#x3D; retval.concat(order.items)
+      }
+    });
+    return retval
+  }
+
+  /**
+   * @brief Sorts a list of orders by datetime
+   * @param orders The orderlist to be sorted
+   */
+  sortOrdersByDate(orders: Order[]) {
+    orders.sort((a: Order, b: Order) &#x3D;&gt; {
+      return (- a.timestamp.getTime() + b.timestamp.getTime())
+    })
+  }
+
+  /**
+   * @brief Returns a list of orders that have been filled 
+   * @returns Order[] of filled orders
+   */
+  getOrderHistory(): Order[] {
+    let retval: Order[] &#x3D; []
+    this.orders.forEach(order &#x3D;&gt; {
+      if (order.status &#x3D;&#x3D;&#x3D; OrderStatus[&#x27;Order Picked Up&#x27;])
+        retval.push(order)
+    });
+    this.sortOrdersByDate(retval)
+    return retval
+  }
+
+  /**
+   * @brief For a list of food items, returns the number of occurences for that item
+   * @param list The list of food items
+   * @param itemName The item name
+   * @returns number of occurences in the foodlist
+   */
+  getNumItemOccurrences(list: FoodItem[], itemName: string): number {
+    let counter: number &#x3D; 0
+    list.forEach(item &#x3D;&gt; {
+      if (item.name &#x3D;&#x3D;&#x3D; itemName) {
+        counter +&#x3D; item.quantity
+      }
+    });
+    return counter
+  }
+
+  /**
+   * @brief Creates a list of all food items in a given order list
+   * @param orders The orders to parse
+   * @returns The full list of items from an order list
+   */
+  getItemsFromOrders(orders: Order[]) {
+    let retval: FoodItem[] &#x3D; []
+    orders.forEach(order &#x3D;&gt; {
+      retval &#x3D; retval.concat(order.items)
+    });
+    return retval
+  }
+
+  /**
+   * @brief Returns a list of lists where sublist are the orders for a given month
+   * @returns History list of lists 
+   */
+  orderHistoryByMonth() {
+    let retval: Order[][] &#x3D; []
+    let history &#x3D; this.getOrderHistory()
+    let i: number &#x3D; 0
+    this.sortOrdersByDate(history)
+
+    history.forEach(order &#x3D;&gt; {
+      if (retval.length &#x3D;&#x3D;&#x3D; 0) {
+        retval.push([order])
+      }
+      else if (order.timestamp.getMonth() &#x3D;&#x3D;&#x3D; retval[i][0].timestamp.getMonth()
+        &amp;&amp; order.timestamp.getFullYear() &#x3D;&#x3D;&#x3D; retval[i][0].timestamp.getFullYear()) {
+        retval[i].push(order)
+      }
+      else {
+        retval.push([order])
+        i +&#x3D; 1
+      }
+    });
+    return retval.reverse()
+  }
+
+  /**
+   * @brief Reshapes an order list to a list of order lists by month
+   * @param orderList The list of orders
+   * @returns List of order lists by month
+   */
+  sortOrderListByMonth(orderList: Order[]) {
+    let retval: Order[][] &#x3D; []
+    let i: number &#x3D; 0
+    this.sortOrdersByDate(orderList)
+
+    orderList.forEach(order &#x3D;&gt; {
+      if (retval.length &#x3D;&#x3D;&#x3D; 0) {
+        retval.push([order])
+      }
+      else if (order.timestamp.getMonth() &#x3D;&#x3D;&#x3D; retval[i][0].timestamp.getMonth()
+        &amp;&amp; order.timestamp.getFullYear() &#x3D;&#x3D;&#x3D; retval[i][0].timestamp.getFullYear()) {
+        retval[i].push(order)
+      }
+      else {
+        retval.push([order])
+        i +&#x3D; 1
+      }
+    });
+    return retval
+  }
+
+  /**
+   * @brief Returns a list containing the number of orders by month
+   * @returns List of numbers of orders by month
+   */
+  getNumOrderByMonth() {
+    let retval: TimestampedOrders[] &#x3D; []
+    let history &#x3D; this.orderHistoryByMonth()
+    history.forEach(orderList &#x3D;&gt; {
+      retval.push({
+        &quot;orders&quot;: orderList.length,
+        &quot;month&quot;: orderList[0].timestamp.toLocaleString(&#x27;default&#x27;, {month: &#x27;long&#x27;, year: &#x27;numeric&#x27;})
+      })
+    });
+    return retval
+  }
+
+  /**
+   * @brief Returns a list of the number of item occurences by month
+   * @param itemName The name of the item to query
+   */
+  getItemDemandByMonth(itemName: string) {
+    let retval: TimestampedItems[] &#x3D; []
+    let history &#x3D; this.orderHistoryByMonth()
+    history.forEach(orderList &#x3D;&gt; {
+      let sum: number &#x3D; 0
+      orderList.forEach(order &#x3D;&gt; {
+        sum +&#x3D; this.getNumItemOccurrences(order.items, itemName)
+      });
+      retval.push({
+        &quot;month&quot;: orderList[0].timestamp.toLocaleString(&#x27;default&#x27;, {month: &#x27;long&#x27;, year: &#x27;numeric&#x27;}),
+        &quot;items&quot;: sum
+      })
+    })
+    return retval
+  }
+
+  /**
+   * @brief Returns a list of timestamped items within a date range
+   * @param itemName The name of the item to search for
+   * @param start The start date of the range
+   * @param end The end date of the range
+   * @returns List of timestamped items
+   */
+  getItemDemandInRange(itemName:string, start:Date, end:Date) {
+    let retval: TimestampedItems[] &#x3D; []
+    let history &#x3D; this.getOrderHistory()
+
+    let cut &#x3D; this.getOrdersInDateRange(history, start, end)
+    let cutReshaped &#x3D; this.sortOrderListByMonth(cut)
+
+    cutReshaped.forEach(orderList &#x3D;&gt; {
+      let sum: number &#x3D; 0
+      orderList.forEach(order &#x3D;&gt; {
+        sum +&#x3D; this.getNumItemOccurrences(order.items, itemName)
+      });
+      retval.push({
+        &quot;month&quot;: orderList[0].timestamp.toLocaleString(&#x27;default&#x27;, {month: &#x27;long&#x27;, year: &#x27;numeric&#x27;}),
+        &quot;items&quot;: sum
+      })
+    })
+    return retval
+  }
+
+  /**
+   * @brief Returns the list of orders within a given range
+   * @param orderList The list of orders to parse
+   * @param start The start date of the range
+   * @param end The end date of the range
+   * @returns The list of orders falling within the range
+   */
+  getOrdersInDateRange(orderList: Order[], start: Date, end: Date) {
+    let retval: Order[] &#x3D; []
+    orderList.forEach(order &#x3D;&gt; {
+      if (order.timestamp.getTime() &gt;&#x3D; start.getTime() &amp;&amp; order.timestamp.getTime() &lt;&#x3D; end.getTime()) {
+        retval.push(order)
+      }
+    });
+    return retval
+  }
+
+  /**
+   * @brief Calculates the date object n months before the given date
+   * @param now The starting date
+   * @param n The number of months to regress
+   * @returns The date n months from the given date
+   */
+  calcPrevDate(now: Date, n: number): Date {
+    let then &#x3D; new Date(now.toDateString())
+    then.setMonth(now.getMonth() - n)
+    return then
+  }
+
+  /**
+   * @brief Returns the previous years order count for the same month
+   * @returns The previous years monthly demand
+   */
+  getPreviousYearDemand(): Number {
+    let history &#x3D; this.getOrderHistory()
+    let now &#x3D; new Date()
+    let start &#x3D; this.calcPrevDate(now, 13)
+    let end &#x3D; this.calcPrevDate(now, 12)
+    let cut &#x3D; this.getOrdersInDateRange(history, start, end)
+    return cut.length
+  }
+
+  /**
+   * @brief Returns the previous years item demand within the same month
+   * @param itemName The name of the item
+   * @returns The total number of item occurences for the previous year during the same month
+   */
+  getItemPreviousYearDemand(itemName: string): Number {
+    let history &#x3D; this.getOrderHistory()
+    let now &#x3D; new Date()
+    let start &#x3D; this.calcPrevDate(now, 13)
+    let end &#x3D; this.calcPrevDate(now, 12)
+    let cut &#x3D; this.getOrdersInDateRange(history, start, end)
+    let items &#x3D; this.getItemsFromOrders(cut)
+    return this.getNumItemOccurrences(items, itemName)
+  }
+
+  /**
+   * Applies linear regression to find the slope of a list of numbers
+   * @param list a list of numbers
+   * @returns The slope of the linear regression
+   */
+  calcLinearRegression(list: number[]) {
+    let n &#x3D; list.length
+
+    if (n &#x3D;&#x3D; 0) {
+      return 0
+    }
+    else {
+
+      let a: number, b: number, c: number, d: number, i: number
+      a &#x3D; b &#x3D; c &#x3D; d &#x3D; i &#x3D; 0
+      list.forEach(element &#x3D;&gt; {
+        i++
+        a +&#x3D; i * element
+        b +&#x3D; i
+        c +&#x3D; element
+        d +&#x3D; i ** 2
+      });
+
+      return (n * (a) - b * c) / (n * d - (b ** 2))
+    }
+  }
+
+  //FORECASTING AND PREDICTION FUNCTIONS
+
+  /**
+   * @brief Computes the current month order demand percent difference to previous year order demand
+   * @returns The percent difference in current year order demand to previous year order demand
+   */
+  prevYearDiff() {
+    let history &#x3D; this.getOrderHistory()
+    let t2 &#x3D; new Date()
+    let t1 &#x3D; this.calcPrevDate(t2, 1)
+    let t3 &#x3D; this.calcPrevDate(t2, 13)
+    let t4 &#x3D; this.calcPrevDate(t2, 12)
+    let period1 &#x3D; this.getOrdersInDateRange(history, t1, t2)
+    let period2 &#x3D; this.getOrdersInDateRange(history, t3, t4)
+
+    if (period2.length &#x3D;&#x3D; 0) {
+      return 0
+    }
+
+    return (period1.length - period2.length) / period2.length
+  }
+
+  /**
+   * @brief Computes the current month item demand percent difference compared to previous year
+   * @param itemName The name of the item to parse
+   * @returns The percent difference of current to previous year item demand
+   */
+  prevYearItemDiff(itemName: string) {
+    let history &#x3D; this.getOrderHistory()
+    let t2 &#x3D; new Date()
+    let t1 &#x3D; this.calcPrevDate(t2, 1)
+    let t3 &#x3D; this.calcPrevDate(t2, 13)
+    let t4 &#x3D; this.calcPrevDate(t2, 12)
+    let period1 &#x3D; this.getOrdersInDateRange(history, t1, t2)
+    let period2 &#x3D; this.getOrdersInDateRange(history, t3, t4)
+
+    let currentDemand &#x3D; this.getNumItemOccurrences(this.getItemsFromOrders(period1), itemName)
+    let previousDemand &#x3D; this.getNumItemOccurrences(this.getItemsFromOrders(period2), itemName)
+
+    if (previousDemand &#x3D;&#x3D; 0) {
+      return 0
+    }
+
+    return (currentDemand - previousDemand) / previousDemand
+  }
+
+  /**
+   * @brief Returns The linear regression of total order frequency trend on a monthly basis for n months
+   * @param n The number of months n to compute the linear regression on
+   * @returns A trend, positive or negative, corresponding to the desired period
+   */
+  getXMonthTrend(n: number): number {
+    let history &#x3D; this.getOrderHistory()
+    let now &#x3D; new Date()
+    let then &#x3D; this.calcPrevDate(now, n)
+    let cut &#x3D; this.getOrdersInDateRange(history, then, now)
+    let i: number &#x3D; 0
+
+    let buckets: number[] &#x3D; []
+    let curMonth: number &#x3D; 0
+
+    cut.forEach(order &#x3D;&gt; {
+      if (buckets.length &#x3D;&#x3D; 0) {
+        buckets &#x3D; [1]
+        curMonth &#x3D; order.timestamp.getMonth()
+      }
+      else if (order.timestamp.getMonth() &#x3D;&#x3D; curMonth) {
+        buckets[i] +&#x3D; 1
+      }
+      else {
+        buckets.push(1)
+        curMonth &#x3D; order.timestamp.getMonth()
+        i++
+      }
+    });
+
+    // Negation a result of most recent months occurring at front of array
+    return -this.calcLinearRegression(buckets)
+  }
+
+  /**
+   * @brief Returns The linear regression of item frequency trend on a monthly basis for n months
+   * @param n The number of months n to compute the linear regression on
+   * @param itemName The name of the item to parse for
+   * @returns A trend, positive or negative, corresponding to the desired period
+   */
+  getXMonthItemTrend(n: number, itemName: string): number {
+    let history &#x3D; this.getOrderHistory()
+    let now &#x3D; new Date()
+    let then &#x3D; this.calcPrevDate(now, n)
+    let cut &#x3D; this.getOrdersInDateRange(history, then, now)
+    let i: number &#x3D; 0
+
+    let buckets: number[] &#x3D; []
+    let curMonth: number &#x3D; 0
+
+    cut.forEach(order &#x3D;&gt; {
+      if (buckets.length &#x3D;&#x3D; 0) {
+        buckets &#x3D; [this.getNumItemOccurrences(order.items, itemName)]
+        curMonth &#x3D; order.timestamp.getMonth()
+      }
+      else if (order.timestamp.getMonth() &#x3D;&#x3D; curMonth) {
+        buckets[i] +&#x3D; this.getNumItemOccurrences(order.items, itemName)
+      }
+      else {
+        buckets.push(this.getNumItemOccurrences(order.items, itemName))
+        curMonth &#x3D; order.timestamp.getMonth()
+        i++
+      }
+    });
+    // Negation a result of most recent months occurring at front of array
+    return -this.calcLinearRegression(buckets)
+  }
+
+  /**
+   * @brief Computes the 1 Dimensional Convolution of an array with a kernel
+   * @note Uses average padding
+   * @param array The array to be convolved
+   * @param kernel The kernel to convolve with
+   * @param norm The normalization factor of the convolution
+   * @returns The result of the convolution, an array of numbers
+   */
+  convolve1D(array: number[], kernel: number[], norm: number): number[] {
+    let copy &#x3D; []
+    let retval &#x3D; []
+    let avg &#x3D; 0
+
+    array.forEach(num &#x3D;&gt; {
+      copy.push(num)
+      avg +&#x3D; num
+    });
+
+    avg /&#x3D; array.length
+    let paddingNum &#x3D; (kernel.length / 2) | 0
+
+    for (let i &#x3D; 0; i &lt; paddingNum; i++) {
+      copy.push(avg)
+      copy.unshift(avg)
+    }
+
+    // i + paddingNum is offset index
+    for (let i &#x3D; 0; i &lt; array.length; i++) {
+      let j &#x3D; i + paddingNum
+      let sum &#x3D; 0
+      for (let k &#x3D; j; k - j &lt; kernel.length; k++) {
+        sum +&#x3D; copy[k - paddingNum] * kernel[k - j]
+      }
+      sum /&#x3D; norm
+      retval.push(sum)
+    }
+    return retval
+  }
+
+  /**
+   * @brief Estimates demand rate histogram using convolution with 1D Sobel Kernel
+   * @returns Demand rate histogram
+   */
+  estOrderFreq(): number[] {
+    let demandHistObj &#x3D; this.getNumOrderByMonth()
+    // Reverse needed as most recent months at lowest index
+    demandHistObj &#x3D; demandHistObj.reverse()
+    let demandHist: number[] &#x3D; []
+    demandHistObj.forEach(element &#x3D;&gt; {
+      demandHist.push(element.orders)
+    })
+    return this.convolve1D(demandHist, [-1, -2, 0, 2, 1], 6)
+  }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'interface';
+            var COMPODOC_CURRENT_PAGE_URL = 'TimestampedItems-1.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

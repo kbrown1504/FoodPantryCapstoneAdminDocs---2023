@@ -79,9 +79,26 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getCurrentUser" >getCurrentUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#grantAdminAccess" >grantAdminAccess</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#revokeAdminAccess" >revokeAdminAccess</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
                                 <a href="#signIn" >signIn</a>
                             </li>
                             <li>
+                                <a href="#signOut" >signOut</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
                                 <a href="#signOut" >signOut</a>
                             </li>
                         </ul>
@@ -102,15 +119,57 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor()</code>
+<code>constructor(loadingService: <a href="../injectables/LoadingService.html" target="_self">LoadingService</a>, alertService: <a href="../injectables/AlertService.html" target="_self">AlertService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/services/auth.service.ts:23</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/services/auth.service.ts:34</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>loadingService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LoadingService.html" target="_self" >LoadingService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>alertService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AlertService.html" target="_self" >AlertService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
             </tbody>
         </table>
 </section>
@@ -124,8 +183,202 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="getCurrentUser"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getCurrentUser</b></span>
+                        <a href="#getCurrentUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCurrentUser()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/services/auth.service.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="grantAdminAccess"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>grantAdminAccess</b></span>
+                        <a href="#grantAdminAccess"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>grantAdminAccess(uid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, pantry: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/services/auth.service.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>uid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pantry</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="revokeAdminAccess"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>revokeAdminAccess</b></span>
+                        <a href="#revokeAdminAccess"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>revokeAdminAccess(uid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="93"
+                            class="link-to-prism">src/app/services/auth.service.ts:93</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>uid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="signIn"></a>
                     <span class="name">
+                        <span class="modifier">Async</span>
                         <span ><b>signIn</b></span>
                         <a href="#signIn"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -133,15 +386,16 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>signIn(email: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, password: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>signIn(email: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, password: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, pantry: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="30"
-                            class="link-to-prism">src/app/services/auth.service.ts:30</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="51"
+                            class="link-to-prism">src/app/services/auth.service.ts:51</a></div>
                 </td>
             </tr>
 
@@ -185,13 +439,25 @@
 
 
                                 </tr>
+                                <tr>
+                                    <td>pantry</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
                             </tbody>
                         </table>
                     </div>
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                     </div>
                     <div class="io-description">
@@ -221,8 +487,47 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="34"
-                            class="link-to-prism">src/app/services/auth.service.ts:34</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/app/services/auth.service.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="signOut"></a>
+                    <span class="name">
+                        <span class="modifier">Static</span>
+                        <span ><b>signOut</b></span>
+                        <a href="#signOut"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>signOut()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="78"
+                            class="link-to-prism">src/app/services/auth.service.ts:78</a></div>
                 </td>
             </tr>
 
@@ -253,7 +558,18 @@ import {
   createUserWithEmailAndPassword 
 } from &quot;firebase/auth&quot;
 
-const auth &#x3D; getAuth()
+import { getFunctions, httpsCallable } from &quot;firebase/functions&quot;;
+import { LoadingService } from &#x27;./loading.service&#x27;;
+import {authentication } from &#x27;src/main&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+import { AlertService } from &#x27;./alert.service&#x27;;
+
+const functions &#x3D; getFunctions()
+
+//const auth &#x3D; getAuth()
+
+const auth &#x3D; authentication
+
 onAuthStateChanged(auth, (user) &#x3D;&gt; {
   if (user) {
     //user is signed in
@@ -268,19 +584,72 @@ onAuthStateChanged(auth, (user) &#x3D;&gt; {
 })
 export class AuthService {
 
-
-  constructor() {
+  constructor(
+    private loadingService: LoadingService,
+    private alertService: AlertService
+  ) {
 
    }
 
-   signIn(email: string, password: string) {
-    signInWithEmailAndPassword(auth, email, password)
+   async getCurrentUser(): Promise&lt;any&gt; {
+    return new Promise(async (resolve, reject) &#x3D;&gt; {
+      const unsub &#x3D; await auth.onAuthStateChanged(user &#x3D;&gt; {
+        resolve(user)
+      }, reject)
+    })
+  }
+
+   async signIn(email: string, password: string, pantry: string) {
+    await this.loadingService.showLoader()
+    await signInWithEmailAndPassword(auth, email, password).then(async (userCred) &#x3D;&gt; {
+      const isAdmin &#x3D; httpsCallable(functions, &#x27;isAdmin&#x27;)
+      // let token &#x3D; await userCred.user.getIdToken()
+      // let params &#x3D; {
+      //   idToken: token
+      // }
+      await isAdmin({pantry: pantry}).then((res) &#x3D;&gt; {
+        this.loadingService.dismissLoader()
+        //res.data will be true or false
+        let userIsAdmin &#x3D; res.data
+        if(!userIsAdmin) {
+          this.signOut()
+          this.alertService.presentAlert(&#x27;Login Failed&#x27;, &#x27;Please check your credentials and try again later.&#x27;, [&#x27;Ok&#x27;])
+        }
+      })
+    }).catch((err) &#x3D;&gt; {
+      this.alertService.presentAlert(&#x27;Login Failed&#x27;, &#x27;Please check your credentials and try again later.&#x27;, [&#x27;Ok&#x27;])
+      this.loadingService.dismissLoader()
+    })
    }
 
    signOut() {
     signOut(auth)
    }
 
+   static signOut() {
+    signOut(auth)
+   }
+
+   async grantAdminAccess(uid: string, pantry: string) {
+    const grantAdmin &#x3D; httpsCallable(functions, &#x27;makeAdmin&#x27;)
+    let params &#x3D; {
+      user: uid,
+      pantryName: pantry
+    }
+    await grantAdmin(params).catch((err) &#x3D;&gt; {
+      this.alertService.presentAlert(&#x27;Error&#x27;, &#x27;Could not modify permissions. Please try again later.&#x27;, [&#x27;Ok&#x27;])
+    })
+   }
+
+   async revokeAdminAccess(uid: string) {
+    const revokeAdmin &#x3D; httpsCallable(functions, &#x27;revokeAdmin&#x27;)
+    let params &#x3D; {
+      user: uid
+    }
+    await revokeAdmin(params).catch((err) &#x3D;&gt; {
+      this.alertService.presentAlert(&#x27;Error&#x27;, &#x27;Could not modify permissions. Please try again later.&#x27;, [&#x27;Ok&#x27;])
+    })
+   }
 
 }
 </code></pre>

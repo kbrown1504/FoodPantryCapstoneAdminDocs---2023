@@ -78,7 +78,10 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#pantryName" >pantryName</a>
+                                <a href="#pantryId" >pantryId</a>
+                            </li>
+                            <li>
+                                <a href="#userId" >userId</a>
                             </li>
                         </ul>
                     </td>
@@ -92,6 +95,14 @@
                 <tr>
                     <td class="col-md-4">
                         <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#addItem" >addItem</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#demoteUser" >demoteUser</a>
+                            </li>
                             <li>
                                 <a href="#foodItemConv" >foodItemConv</a>
                             </li>
@@ -109,7 +120,22 @@
                             </li>
                             <li>
                                     <span class="modifier">Async</span>
+                                <a href="#getPantries" >getPantries</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
                                 <a href="#getPantry" >getPantry</a>
+                            </li>
+                            <li>
+                                <a href="#getPantryId" >getPantryId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getPerms" >getPerms</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getUsers" >getUsers</a>
                             </li>
                             <li>
                                     <span class="modifier">Async</span>
@@ -117,6 +143,14 @@
                             </li>
                             <li>
                                 <a href="#pantryConv" >pantryConv</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#promoteUser" >promoteUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#removeItem" >removeItem</a>
                             </li>
                             <li>
                                     <span class="modifier">Async</span>
@@ -148,15 +182,45 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor()</code>
+<code>constructor(loadingService: <a href="../injectables/LoadingService.html" target="_self">LoadingService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/services/firebase.service.ts:19</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/services/firebase.service.ts:26</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>loadingService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LoadingService.html" target="_self" >LoadingService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
             </tbody>
         </table>
 </section>
@@ -166,6 +230,163 @@
     <h3 id="methods">
         Methods
     </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addItem"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>addItem</b></span>
+                        <a href="#addItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addItem(itemToAdd: FoodItem)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="218"
+                            class="link-to-prism">src/app/services/firebase.service.ts:218</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Adds a new item to the database</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>itemToAdd</td>
+                                    <td>
+                                            <code>FoodItem</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>FoodItem to add to the database</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="demoteUser"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>demoteUser</b></span>
+                        <a href="#demoteUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>demoteUser(uid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="386"
+                            class="link-to-prism">src/app/services/firebase.service.ts:386</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Removes a specific user&#39;s admin perms</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>uid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>UID of user to be demoted</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>result of revokeAdmin cloud function</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
     <table class="table table-sm table-bordered">
         <tbody>
             <tr>
@@ -186,8 +407,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="84"
-                            class="link-to-prism">src/app/services/firebase.service.ts:84</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="138"
+                            class="link-to-prism">src/app/services/firebase.service.ts:138</a></div>
                 </td>
             </tr>
 
@@ -265,8 +486,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="58"
-                            class="link-to-prism">src/app/services/firebase.service.ts:58</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="108"
+                            class="link-to-prism">src/app/services/firebase.service.ts:108</a></div>
                 </td>
             </tr>
 
@@ -312,8 +533,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="122"
-                            class="link-to-prism">src/app/services/firebase.service.ts:122</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="180"
+                            class="link-to-prism">src/app/services/firebase.service.ts:180</a></div>
                 </td>
             </tr>
 
@@ -391,8 +612,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="93"
-                            class="link-to-prism">src/app/services/firebase.service.ts:93</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="147"
+                            class="link-to-prism">src/app/services/firebase.service.ts:147</a></div>
                 </td>
             </tr>
 
@@ -410,6 +631,53 @@
                     </div>
                     <div class="io-description">
                         <p>A Promise containing an array of Order Objects</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPantries"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getPantries</b></span>
+                        <a href="#getPantries"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPantries()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/services/firebase.service.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieves all pantries that are currently in the database</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Pantry.html" target="_self" >Promise&lt;Pantry[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>A promise containing an array of all available Pantries</p>
 
                     </div>
                 </td>
@@ -438,8 +706,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="29"
-                            class="link-to-prism">src/app/services/firebase.service.ts:29</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="76"
+                            class="link-to-prism">src/app/services/firebase.service.ts:76</a></div>
                 </td>
             </tr>
 
@@ -457,6 +725,177 @@
                     </div>
                     <div class="io-description">
                         <p>Promise that contains the Pantry Data from the database</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPantryId"></a>
+                    <span class="name">
+                        <span ><b>getPantryId</b></span>
+                        <a href="#getPantryId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPantryId()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/app/services/firebase.service.ts:68</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieves the pantry&#39;s DB id</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The pantry Id that is intialized on login</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPerms"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getPerms</b></span>
+                        <a href="#getPerms"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPerms(user: User)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="351"
+                            class="link-to-prism">src/app/services/firebase.service.ts:351</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieves a user&#39;s premission from the authentication database</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                            <code>User</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>User to retrieve permissions for</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>An dictionary containing the user&#39;s custom claims in firebase</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUsers"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getUsers</b></span>
+                        <a href="#getUsers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUsers()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="329"
+                            class="link-to-prism">src/app/services/firebase.service.ts:329</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieves all users for the pantry that the user is currently logged into</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;User[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>A promise containing an array of users</p>
 
                     </div>
                 </td>
@@ -485,8 +924,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="147"
-                            class="link-to-prism">src/app/services/firebase.service.ts:147</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="205"
+                            class="link-to-prism">src/app/services/firebase.service.ts:205</a></div>
                 </td>
             </tr>
 
@@ -562,8 +1001,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="49"
-                            class="link-to-prism">src/app/services/firebase.service.ts:49</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="99"
+                            class="link-to-prism">src/app/services/firebase.service.ts:99</a></div>
                 </td>
             </tr>
 
@@ -623,6 +1062,163 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="promoteUser"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>promoteUser</b></span>
+                        <a href="#promoteUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>promoteUser(uid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="368"
+                            class="link-to-prism">src/app/services/firebase.service.ts:368</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Grants a specific user admin perms</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>uid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>UID if the user to be promoted</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>the result of the makeAdmin cloud function</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeItem"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>removeItem</b></span>
+                        <a href="#removeItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>removeItem(itemToRemove: FoodItem)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="268"
+                            class="link-to-prism">src/app/services/firebase.service.ts:268</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Removes a food item from the database</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>itemToRemove</td>
+                                    <td>
+                                            <code>FoodItem</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>FoodItem to remove from the DB</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="updateInventoryItem"></a>
                     <span class="name">
                         <span class="modifier">Async</span>
@@ -641,8 +1237,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="160"
-                            class="link-to-prism">src/app/services/firebase.service.ts:160</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="247"
+                            class="link-to-prism">src/app/services/firebase.service.ts:247</a></div>
                 </td>
             </tr>
 
@@ -719,8 +1315,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="179"
-                            class="link-to-prism">src/app/services/firebase.service.ts:179</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="285"
+                            class="link-to-prism">src/app/services/firebase.service.ts:285</a></div>
                 </td>
             </tr>
 
@@ -813,8 +1409,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="195"
-                            class="link-to-prism">src/app/services/firebase.service.ts:195</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="304"
+                            class="link-to-prism">src/app/services/firebase.service.ts:304</a></div>
                 </td>
             </tr>
 
@@ -879,10 +1475,10 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="pantryName"></a>
+                    <a name="pantryId"></a>
                     <span class="name">
-                        <span ><b>pantryName</b></span>
-                        <a href="#pantryName"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>pantryId</b></span>
+                        <a href="#pantryId"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
@@ -894,12 +1490,43 @@
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Default value : </i><code>&#x27;testPantry&#x27;</code>
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/services/firebase.service.ts:19</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/services/firebase.service.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userId"></a>
+                    <span class="name">
+                        <span ><b>userId</b></span>
+                        <a href="#userId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/services/firebase.service.ts:25</a></div>
                         </td>
                     </tr>
 
@@ -914,12 +1541,18 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
 
-import { getFirestore, collection, addDoc, updateDoc, getDocs, getDoc, QuerySnapshot, DocumentSnapshot, doc } from &#x27;firebase/firestore&#x27;
+import { getFirestore, collection, addDoc, updateDoc, getDocs, getDoc, QuerySnapshot, DocumentSnapshot, doc, setDoc, deleteDoc } from &#x27;firebase/firestore&#x27;
 
 import { FoodItem } from &#x27;../../../../globalModels/foodItem&#x27;
 import { Order } from &#x27;../../../../globalModels/order&#x27;
 import { Pantry } from &#x27;../../../../globalModels/pantry&#x27;
 import { OrderStatus } from &#x27;../../../../globalModels/orderStatus&#x27;;
+
+import { getFunctions, httpsCallable } from &quot;firebase/functions&quot;;
+import { User } from &#x27;../../../../globalModels/user&#x27;;
+import { LoadingService } from &#x27;./loading.service&#x27;;
+
+const functions &#x3D; getFunctions()
 
 const db &#x3D; getFirestore()
 
@@ -930,10 +1563,51 @@ export class FirebaseService {
 
   //This will be used to determine which pantry instance is accessed
   //TODO: update/change this when the user logs in
-  pantryName &#x3D; &#x27;testPantry&#x27;
+  userId &#x3D; &#x27;&#x27;
+  pantryId &#x3D; &#x27;&#x27;
 
-  constructor() {
+  constructor(
+    private loadingService: LoadingService
+  ) {
+    let temp &#x3D; sessionStorage.getItem(&#x27;uid&#x27;)
+    let temp2 &#x3D; sessionStorage.getItem(&#x27;pantryId&#x27;)
+    if (temp !&#x3D; null &amp;&amp; temp2 !&#x3D; null) {
+      this.userId &#x3D; temp
+      this.pantryId &#x3D; temp2
+    }
+  }
 
+  /**
+   * Retrieves all pantries that are currently in the database
+   * @returns A promise containing an array of all available Pantries
+   */
+  async getPantries(): Promise&lt;Pantry[]&gt; {
+    await this.loadingService.showLoader()
+    let snapshot &#x3D; undefined
+    try {
+      snapshot &#x3D; await getDocs(collection(db, &#x27;pantries&#x27;))
+    } catch (error) {
+      this.loadingService.dismissLoader()
+      throw error
+    }
+    if (snapshot &#x3D;&#x3D; undefined) {
+      this.loadingService.dismissLoader()
+      throw Error(&#x27;No Pantries Found&#x27;)
+    }
+    var toReturn: Pantry[] &#x3D; []
+    snapshot.forEach((pantry) &#x3D;&gt; {
+      toReturn.push(this.pantryConv(pantry))
+    })
+    this.loadingService.dismissLoader()
+    return toReturn
+  }
+
+  /**
+   * Retrieves the pantry&#x27;s DB id
+   * @returns The pantry Id that is intialized on login
+   */
+  getPantryId() {
+    return this.pantryId
   }
 
   /**
@@ -941,16 +1615,19 @@ export class FirebaseService {
    * @returns Promise that contains the Pantry Data from the database
    */
   async getPantry(): Promise&lt;Pantry&gt; {
+    await this.loadingService.showLoader()
     let snapshot &#x3D; undefined;
     try {
-      snapshot &#x3D; await getDoc(doc(db, &#x27;pantries/&#x27; + this.pantryName))
+      snapshot &#x3D; await getDoc(doc(db, &#x27;pantries/&#x27; + this.pantryId))
     } catch (error) {
+      this.loadingService.dismissLoader()
       throw (error)
     }
     if (snapshot &#x3D;&#x3D; undefined) {
+      this.loadingService.dismissLoader()
       throw Error(&#x27;Food Pantry does not exist&#x27;)
     }
-
+    this.loadingService.dismissLoader()
     return this.pantryConv(snapshot)
 
   }
@@ -962,7 +1639,7 @@ export class FirebaseService {
    */
   pantryConv(snapshot: DocumentSnapshot) {
     let data &#x3D; snapshot.data()!
-    return new Pantry(data[&#x27;name&#x27;], data[&#x27;description&#x27;], data[&#x27;address&#x27;], data[&#x27;logoUrl&#x27;], data[&#x27;primaryColor&#x27;], data[&#x27;secondaryColor&#x27;], data[&#x27;orderLimit&#x27;])
+    return new Pantry(snapshot.id, data[&#x27;name&#x27;], data[&#x27;description&#x27;], data[&#x27;address&#x27;], data[&#x27;logoUrl&#x27;], data[&#x27;primaryColor&#x27;], data[&#x27;secondaryColor&#x27;], data[&#x27;orderLimit&#x27;])
   }
 
   /**
@@ -970,14 +1647,17 @@ export class FirebaseService {
    * @returns Promise containing an array of FoodItem Objects
    */
   async getInventory(): Promise&lt;FoodItem[]&gt; {
+    await this.loadingService.showLoader()
     let snapshot &#x3D; undefined;
     try {
-      snapshot &#x3D; await getDocs(collection(db, &quot;pantries/&quot; + this.pantryName + &quot;/inventory/&quot;))
+      snapshot &#x3D; await getDocs(collection(db, &quot;pantries/&quot; + this.pantryId + &quot;/inventory/&quot;))
     } catch (error) {
       //throw error to outer page
+      this.loadingService.dismissLoader()
       throw error
     }
     if (snapshot &#x3D;&#x3D; undefined) {
+      this.loadingService.dismissLoader()
       throw Error(&#x27;No Data Found&#x27;)
     }
     
@@ -987,6 +1667,7 @@ export class FirebaseService {
         toReturn.push(this.foodItemConv(doc))
       }
     })
+    this.loadingService.dismissLoader()
     return toReturn
   }
 
@@ -1005,14 +1686,17 @@ export class FirebaseService {
    * @returns A Promise containing an array of Order Objects
    */
   async getOrders(): Promise&lt;Order[]&gt; {
+    await this.loadingService.showLoader()
     let snapshot &#x3D; undefined;
     try {
-      snapshot &#x3D; await getDocs(collection(db, &quot;pantries/&quot; + this.pantryName + &quot;/orders/&quot;))
+      snapshot &#x3D; await getDocs(collection(db, &quot;pantries/&quot; + this.pantryId + &quot;/orders/&quot;))
     } catch (error) {
+      this.loadingService.dismissLoader()
       //throw error to outer page
       throw error
     }
     if (snapshot &#x3D;&#x3D; undefined) {
+      this.loadingService.dismissLoader()
       throw Error(&#x27;No Data Found&#x27;)
     }
 
@@ -1024,6 +1708,7 @@ export class FirebaseService {
         toReturn.push(toAdd)
       }
     }
+    this.loadingService.dismissLoader()
     // console.log(&#x27;returning from orders&#x27;)
     return toReturn
   }
@@ -1068,11 +1753,41 @@ export class FirebaseService {
   }
 
   /**
+   * Adds a new item to the database
+   * @param itemToAdd FoodItem to add to the database
+   */
+  async addItem(itemToAdd: FoodItem) {
+    await this.loadingService.showLoader()
+    let docRef &#x3D; doc(db, &#x27;pantries/&#x27; + this.pantryId + &#x27;/inventory/&#x27; + itemToAdd.id)
+    let snapshot &#x3D; await getDoc(docRef)
+    if (snapshot.exists()) {
+      console.log(&#x27;calling-dismiss&#x27;)
+      this.loadingService.dismissLoader()
+      throw Error(&#x27;Item already exists&#x27;)
+    }
+    try {
+      await setDoc(docRef, {
+        imageUrl: itemToAdd.imageUrl,
+        limit: itemToAdd.limit,
+        name: itemToAdd.name,
+        quantity: itemToAdd.quantity
+      })
+    } catch (err) {
+      console.log(&#x27;calling-dismiss&#x27;)
+      this.loadingService.dismissLoader()
+      throw err
+    }
+    console.log(&#x27;calling-dismiss&#x27;)
+    this.loadingService.dismissLoader()
+  }
+
+  /**
    * Updates a FoodItem in the inventory
    * @param itemToUpdate FoodItem that is the item to update in the inventory
    */
   async updateInventoryItem(itemToUpdate: FoodItem) {
-    let docRef &#x3D; doc(db, &#x27;pantries/&#x27; + this.pantryName + &#x27;/inventory/&#x27; + itemToUpdate.id)
+    await this.loadingService.showLoader()
+    let docRef &#x3D; doc(db, &#x27;pantries/&#x27; + this.pantryId + &#x27;/inventory/&#x27; + itemToUpdate.id)
     let snapshot &#x3D; await getDoc(docRef)
     if (snapshot.exists()) {
       await updateDoc(docRef, {
@@ -1081,8 +1796,26 @@ export class FirebaseService {
         quantity: itemToUpdate.quantity
       })
     } else {
+      this.loadingService.dismissLoader()
       throw Error(&#x27;Item does not exist!&#x27;)
     }
+    this.loadingService.dismissLoader()
+  }
+
+  /**
+   * Removes a food item from the database
+   * @param itemToRemove FoodItem to remove from the DB
+   */
+  async removeItem(itemToRemove: FoodItem) {
+    await this.loadingService.showLoader()
+    let docRef &#x3D; doc(db, &#x27;pantries/&#x27; + this.pantryId + &#x27;/inventory/&#x27; + itemToRemove.id)
+    try {
+      await deleteDoc(docRef)
+    } catch (err) {
+      this.loadingService.dismissLoader()
+      throw err
+    }
+    this.loadingService.dismissLoader()
   }
 
   /**
@@ -1091,15 +1824,18 @@ export class FirebaseService {
    * @param newStatus Integer status to change the order status to
    */
   async updateOrderStatus(order: Order, newStatus: OrderStatus) {
-    let docRef &#x3D; doc(db, &#x27;pantries/&#x27; + this.pantryName + &#x27;/orders/&#x27; + order.id)
+    await this.loadingService.showLoader()
+    let docRef &#x3D; doc(db, &#x27;pantries/&#x27; + this.pantryId + &#x27;/orders/&#x27; + order.id)
     let snapshot &#x3D; await getDoc(docRef)
     if (snapshot.exists()) {
       await updateDoc(docRef, {
         status: newStatus
       })
     } else {
+      this.loadingService.dismissLoader()
       throw Error(&#x27;Order does not exist!&#x27;)
     }
+    this.loadingService.dismissLoader()
   }
 
   /**
@@ -1107,7 +1843,8 @@ export class FirebaseService {
    * @param pantry Pantry object to update in DB
    */
   async updatePantry(pantry: Pantry) {
-    let docRef &#x3D; doc(db, &#x27;pantries/&#x27; + this.pantryName)
+    await this.loadingService.showLoader()
+    let docRef &#x3D; doc(db, &#x27;pantries/&#x27; + this.pantryId)
     let snapshot &#x3D; await getDoc(docRef)
     if (snapshot.exists()) {
       await updateDoc(docRef, {
@@ -1120,8 +1857,82 @@ export class FirebaseService {
         secondaryColor: pantry.secondaryColor
       })
     } else {
+      this.loadingService.dismissLoader()
       throw Error(&#x27;pantry does not exist!&#x27;)
     }
+    this.loadingService.dismissLoader()
+  }
+
+  /**
+   * Retrieves all users for the pantry that the user is currently logged into
+   * @returns A promise containing an array of users
+   */
+  async getUsers(): Promise&lt;User[]&gt; {
+    await this.loadingService.showLoader()
+    const getUsers &#x3D; httpsCallable(functions, &#x27;getUsers&#x27;)
+    return getUsers().then(async (result: any) &#x3D;&gt; {
+      var userArr: User[] &#x3D; []
+      let users &#x3D; result.data.users
+      for (let user of users) {
+        let toAdd &#x3D; new User(user.uid, user.email, user.uid)
+        toAdd.perms &#x3D; await this.getPerms(toAdd)
+        userArr.push(toAdd)
+      }
+      userArr.reverse()
+      this.loadingService.dismissLoader()
+      return userArr
+    })
+  }
+
+  /**
+   * Retrieves a user&#x27;s premission from the authentication database
+   * @param user User to retrieve permissions for
+   * @returns An dictionary containing the user&#x27;s custom claims in firebase
+   */
+  async getPerms(user: User) {
+    console.log(&#x27;calling getPerms&#x27;)
+    const getPerms &#x3D; httpsCallable(functions, &#x27;getPerms&#x27;)
+    let params &#x3D; {
+      email: user.email
+    }
+    return getPerms(params).then((res: any) &#x3D;&gt; {
+      let perms &#x3D; res.data
+      return perms
+    })
+  }
+
+  /**
+   * Grants a specific user admin perms
+   * @param uid UID if the user to be promoted
+   * @returns the result of the makeAdmin cloud function
+   */
+  async promoteUser(uid: string) {
+    await this.loadingService.showLoader()
+    const makeAdmin &#x3D; httpsCallable(functions, &#x27;makeAdmin&#x27;)
+    let params &#x3D; {
+      user: uid,
+      pantryName: this.pantryId
+    }
+    return makeAdmin(params).then(() &#x3D;&gt; {
+      console.log(&#x27;done with edit&#x27;)
+      this.loadingService.dismissLoader()
+    })
+  }
+
+  /**
+   * Removes a specific user&#x27;s admin perms
+   * @param uid UID of user to be demoted
+   * @returns result of revokeAdmin cloud function
+   */
+  async demoteUser(uid: string) {
+    await this.loadingService.showLoader()
+    const revokeAdmin &#x3D; httpsCallable(functions, &#x27;revokeAdmin&#x27;)
+    let params &#x3D; {
+      user: uid
+    }
+    return revokeAdmin(params).then(() &#x3D;&gt; {
+      this.loadingService.dismissLoader()
+    })
   }
 
 }

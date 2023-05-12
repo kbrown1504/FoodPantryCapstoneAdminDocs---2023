@@ -35,7 +35,7 @@
 
 <ol class="breadcrumb">
     <li>Modules</li>
-    <li >AppRoutingModule</li>
+    <li >UserManagementPageRoutingModule</li>
 </ol>
 
 
@@ -55,7 +55,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/app-routing.module.ts</code>
+            <code>src/app/user-management/user-management-routing.module.ts</code>
         </p>
 
 
@@ -73,72 +73,22 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
-import { PreloadAllModules, RouterModule, Routes } from &#x27;@angular/router&#x27;;
-import { AuthGuard } from &#x27;./services/guards/auth.guard&#x27;;
+import { Routes, RouterModule } from &#x27;@angular/router&#x27;;
+
+import { UserManagementPage } from &#x27;./user-management.page&#x27;;
 
 const routes: Routes &#x3D; [
   {
-    path: &#x27;home&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./home/home.module&#x27;).then( m &#x3D;&gt; m.HomePageModule)&quot;,
-    canActivate: [AuthGuard]
-  },
-  {
     path: &#x27;&#x27;,
-    redirectTo: &#x27;login&#x27;,
-    pathMatch: &#x27;full&#x27;
-  },
-  {
-    path: &#x27;login&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./login/login.module&#x27;).then( m &#x3D;&gt; m.LoginPageModule)&quot;
-  },
-  {
-    path: &#x27;&#x27;,
-    redirectTo: &#x27;home&#x27;,
-    pathMatch: &#x27;full&#x27;
-  },
-  {
-    path: &#x27;login&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./login/login.module&#x27;).then( m &#x3D;&gt; m.LoginPageModule)&quot;
-  },
-  {
-    path: &#x27;forgot-password&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./forgot-password/forgot-password.module&#x27;).then( m &#x3D;&gt; m.ForgotPasswordPageModule)&quot;
-  },
-  {
-    path: &#x27;inventory-management&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./inventory-management/inventory-management.module&#x27;).then( m &#x3D;&gt; m.InventoryManagementPageModule)&quot;,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: &#x27;order-management&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./order-management/order-management.module&#x27;).then( m &#x3D;&gt; m.OrderManagementPageModule)&quot;,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: &#x27;profile&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./profile/profile.module&#x27;).then( m &#x3D;&gt; m.ProfilePageModule)&quot;,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: &#x27;pantry-statistics&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./pantry-statistics/pantry-statistics.module&#x27;).then( m &#x3D;&gt; m.PantryStatisticsPageModule)&quot;,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: &#x27;user-management&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./user-management/user-management.module&#x27;).then( m &#x3D;&gt; m.UserManagementPageModule)&quot;,
-    canActivate: [AuthGuard]
-  },
-
+    component: UserManagementPage
+  }
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
-  ],
-  exports: [RouterModule]
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class UserManagementPageRoutingModule {}
 </code></pre>
     </div>
 </div>
@@ -185,7 +135,7 @@ export class AppRoutingModule { }
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'module';
-            var COMPODOC_CURRENT_PAGE_URL = 'AppRoutingModule.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'UserManagementPageRoutingModule.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

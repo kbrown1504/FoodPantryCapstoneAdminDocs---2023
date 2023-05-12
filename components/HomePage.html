@@ -115,6 +115,51 @@
     </table>
 </section>
 
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#logoUrl" >logoUrl</a>
+                            </li>
+                            <li>
+                                <a href="#pantry" >pantry</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
 
     <section>
     <h3 id="constructor">Constructor</h3>
@@ -122,15 +167,45 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor()</code>
+<code>constructor(firebaseService: <a href="../injectables/FirebaseService.html" target="_self">FirebaseService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/home/home.page.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/home/home.page.ts:12</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>firebaseService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FirebaseService.html" target="_self" >FirebaseService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
             </tbody>
         </table>
 </section>
@@ -139,13 +214,119 @@
 
 
 
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
 
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/app/home/home.page.ts:20</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Init method retrieves the pantry so the patry name and logo can be set</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logoUrl"></a>
+                    <span class="name">
+                        <span ><b>logoUrl</b></span>
+                        <a href="#logoUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/home/home.page.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pantry"></a>
+                    <span class="name">
+                        <span ><b>pantry</b></span>
+                        <a href="#pantry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Pantry.html" target="_self" >Pantry</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/home/home.page.ts:11</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
 
 </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+import { FirebaseService } from &#x27;../services/firebase.service&#x27;;
+import { Pantry } from &#x27;../../../../globalModels/pantry&#x27;;
 
 @Component({
   selector: &#x27;app-home&#x27;,
@@ -153,35 +334,36 @@
   styleUrls: [&#x27;home.page.scss&#x27;],
 })
 export class HomePage {
+  pantry: Pantry
+  logoUrl: string
+  constructor(
+    private firebaseService: FirebaseService
+  ) {}
 
-  constructor() {}
+  /**
+   * Init method retrieves the pantry so the patry name and logo can be set
+   */
+    async ngOnInit() {
+      this.pantry &#x3D; await this.firebaseService.getPantry()
+      this.logoUrl &#x3D; this.pantry.logoUrl
+    }
 
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;ion-header [translucent]&#x3D;&quot;true&quot;&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;ion-header&gt;
   &lt;ion-toolbar&gt;
-    &lt;ion-title&gt;
-      Blank
-    &lt;/ion-title&gt;
   &lt;/ion-toolbar&gt;
 &lt;/ion-header&gt;
-
 &lt;ion-content [fullscreen]&#x3D;&quot;true&quot;&gt;
-  &lt;ion-header collapse&#x3D;&quot;condense&quot;&gt;
-    &lt;ion-toolbar&gt;
-      &lt;ion-title size&#x3D;&quot;large&quot;&gt;Blank&lt;/ion-title&gt;
-    &lt;/ion-toolbar&gt;
-  &lt;/ion-header&gt;
-
   &lt;div id&#x3D;&quot;container&quot;&gt;
-    &lt;strong&gt;Ready to create an app?&lt;/strong&gt;
-    &lt;p&gt;Start with Ionic &lt;a target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener noreferrer&quot; href&#x3D;&quot;https://ionicframework.com/docs/components&quot;&gt;UI Components&lt;/a&gt;&lt;/p&gt;
+    &lt;h1 *ngIf&#x3D;&quot;pantry !&#x3D; undefined&quot;&gt;{{pantry.name}} Admin App&lt;/h1&gt;
+    &lt;img style&#x3D;&quot;width: 30vh; height: 30vh;&quot; src&#x3D;&quot;{{logoUrl}}&quot;&gt;
+    &lt;h1&gt;Use the hamburger menu to manage your application&lt;/h1&gt;
   &lt;/div&gt;
-&lt;/ion-content&gt;
-</code></pre>
+&lt;/ion-content&gt;</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
@@ -242,8 +424,8 @@ export class HomePage {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ion-header [translucent]="true">  <ion-toolbar>    <ion-title>      Blank    </ion-title>  </ion-toolbar></ion-header><ion-content [fullscreen]="true">  <ion-header collapse="condense">    <ion-toolbar>      <ion-title size="large">Blank</ion-title>    </ion-toolbar>  </ion-header>  <div id="container">    <strong>Ready to create an app?</strong>    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>  </div></ion-content></div>'
-    var COMPONENTS = [{'name': 'AddDialog', 'selector': 'add-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditDetailsDialog', 'selector': 'edit-details-dialog'},{'name': 'EditDialog', 'selector': 'edit-dialog'},{'name': 'EditOrderDialog', 'selector': 'edit-order-dialog'},{'name': 'ForgotPasswordPage', 'selector': 'app-forgot-password'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'InventoryManagementPage', 'selector': 'inventory-management'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'OrderManagementPage', 'selector': 'app-order-management'},{'name': 'PantryStatisticsPage', 'selector': 'app-pantry-statistics'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'SignupPage', 'selector': 'app-signup'},{'name': 'ViewOrderDialog', 'selector': 'view-order-dialog'}];
+        var COMPONENT_TEMPLATE = '<div><ion-header>  <ion-toolbar>  </ion-toolbar></ion-header><ion-content [fullscreen]="true">  <div id="container">    <h1 *ngIf="pantry != undefined">{{pantry.name}} Admin App</h1>    <img style="width: 30vh; height: 30vh;" src="{{logoUrl}}">    <h1>Use the hamburger menu to manage your application</h1>  </div></ion-content></div>'
+    var COMPONENTS = [{'name': 'AddDialog', 'selector': 'add-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditDetailsDialog', 'selector': 'edit-details-dialog'},{'name': 'EditDialog', 'selector': 'edit-dialog'},{'name': 'EditOrderDialog', 'selector': 'edit-order-dialog'},{'name': 'ForgotPasswordPage', 'selector': 'app-forgot-password'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'InventoryManagementPage', 'selector': 'inventory-management'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'OrderManagementPage', 'selector': 'app-order-management'},{'name': 'PantryStatisticsPage', 'selector': 'app-pantry-statistics'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'UserManagementPage', 'selector': 'app-user-management'},{'name': 'ViewOrderDialog', 'selector': 'view-order-dialog'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'HomePage'};
 </script>
